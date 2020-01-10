@@ -1,22 +1,30 @@
-# Go CLI Template
+# HTTP Reference
 
-This is a template for Go CLI tools. Major features are:
+This is a handy little helper that puts HTTP reference at your fingertips, when you're on the CLI, when you need it.
 
-1. Setup script
-2. Release build action
-3. PR validation action
-4. Code of Conduct
-5. Basic security policy
-6. Modules enabled
-7. Rudimentary accepance tests
+## But why?
 
-## Setup
+Because I can **never** remember what the bloody http status codes mean, or the details of methods, or whatever. It's annoying!
 
-1. Create a new repo from this template
-2. `$ ./setup.sh`
-3. Follow the prompts
+## Why not just wikipedia?
 
-Use the `-d` option to see what will be modified without changing any files.
+Well it boils down to 2 things:
+
+1. If I use the browser then it means that I have to use the mouse, or a track pad or something.
+2. I'm a little bored on a Friday night. There's some rubbish film on. Quite frankly I'm a little bored.
+3. If I make it good enough then people will give me stars. This, as everyone knows, is a proxy for love and it will make up for many deficiencies in my life.
+
+# Installation
+
+```shell
+$ go get github.com/dnnrly/httpref/cmd/httpref
+```
+
+# Usage
+
+```
+
+```
 
 ## Important `make` targets
 
