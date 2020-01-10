@@ -13,6 +13,7 @@ Well it boils down to 2 things:
 1. If I use the browser then it means that I have to use the mouse, or a track pad or something.
 2. I'm a little bored on a Friday night. There's some rubbish film on. Quite frankly I'm a little bored.
 3. If I make it good enough then people will give me stars. This, as everyone knows, is a proxy for love and it will make up for many deficiencies in my life.
+4. My attention to detail is incredible. I therefore invite you to sponsor me using the links at the top of the page. :)
 
 # Installation
 
