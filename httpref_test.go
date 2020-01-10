@@ -1,4 +1,4 @@
-package goclitem
+package httpref
 
 import "testing"
 

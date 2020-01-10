@@ -1,6 +1,6 @@
 package main
 
-import "github.com/dnnrly/goclitem/cmd"
+import "github.com/dnnrly/httpref/cmd"
 
 func main() {
 	cmd.Execute()

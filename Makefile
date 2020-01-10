@@ -10,7 +10,7 @@ TMP_DIR?=./tmp
 
 BASE_DIR=$(shell pwd)
 
-NAME=goclitem
+NAME=httpref
 
 export GO111MODULE=on
 export GOPROXY=https://proxy.golang.org

@@ -13,7 +13,7 @@
 *.out
 coverage.txt
 
-/goclitem
+/httpref
 
 libexec/
 bin/

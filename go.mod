@@ -1,4 +1,4 @@
-module github.com/dnnrly/goclitem
+module github.com/dnnrly/httpref
 
 go 1.13
 

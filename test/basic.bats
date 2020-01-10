@@ -1,4 +1,4 @@
-BIN=./goclitem
+BIN=./httpref
 
 @test "Can run the application" {
     run ${BIN}
