@@ -24,7 +24,29 @@ $ go get github.com/dnnrly/httpref/cmd/httpref
 # Usage
 
 ```
+$ httpref 1
+  1xx  Informational response
+  100  Continue
+  101  Switching
+  102  Processing
+  103  Early hints
+  
 
+$ httpref 200
+200 - OK
+
+The HTTP 200 OK success status response code indicates that the request has succeeded. A 200 response is cacheable by default.
+
+The meaning of a success depends on the HTTP request method:
+
+    GET: The resource has been fetched and is transmitted in the message body.
+    HEAD: The entity headers are in the message body.
+    POST: The resource describing the result of the action is transmitted in the message body.
+    TRACE: The message body contains the request message as received by the server.
+
+The successful result of a PUT or a DELETE is often not a 200 OK but a 204 No Content (or a 201 Created when the resource is uploaded for the first time).
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200
 ```
 
 ## Important `make` targets
