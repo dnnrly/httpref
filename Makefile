@@ -16,6 +16,8 @@ export GO111MODULE=on
 export GOPROXY=https://proxy.golang.org
 export PATH := $(BASE_DIR)/bin:$(PATH)
 
+.PHONY: install deps clean clean-deps test-deps build-deps deps test acceptance-test ci-test lint release update
+
 install: deps
 
 build:

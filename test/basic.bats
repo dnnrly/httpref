@@ -1,8 +1,8 @@
 BIN=./httpref
 
-@test "Can run the application" {
+@test "Fails with no parameters" {
     run ${BIN}
     echo $output
-    [ $status -eq 0 ]
+    [ $status -ne 0 ]
 }
 
