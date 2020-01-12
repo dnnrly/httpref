@@ -34,17 +34,24 @@ func init() {
 }
 
 func root(cmd *cobra.Command, args []string) error {
-	results := httpref.Statuses
+	results := append(httpref.Statuses.Titles(), httpref.Headers.Titles()...)
 
 	if !all {
 		if len(args) == 0 {
-			fmt.Fprintf(os.Stderr, "Must specify a status code, or part of it\n")
+			fmt.Fprintf(os.Stderr, "Must specify something to filter by\n")
 			os.Exit(1)
 		} else {
+			results = append(httpref.Statuses, httpref.Headers...)
 			results = results.ByName(args[0])
 		}
 	}
 
+	printResults(results)
+
+	return nil
+}
+
+func printResults(results httpref.References) {
 	switch len(results) {
 	case 0:
 		fmt.Fprintf(os.Stderr, "Name note recognised\n")
@@ -56,6 +63,4 @@ func root(cmd *cobra.Command, args []string) error {
 			fmt.Printf("\t%s\t%s\n", r.Name, r.Summary)
 		}
 	}
-
-	return nil
 }

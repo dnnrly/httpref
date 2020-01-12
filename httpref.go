@@ -4,6 +4,7 @@ import "strings"
 
 type Reference struct {
 	Name        string
+	IsTitle     bool
 	Summary     string
 	Description string
 }
@@ -22,9 +23,22 @@ func (r References) ByName(code string) References {
 	return results
 }
 
+func (r References) Titles() References {
+	results := References{}
+
+	for _, v := range r {
+		if v.IsTitle {
+			results = append(results, v)
+		}
+	}
+
+	return results
+}
+
 var Statuses = References{
 	{
 		Name:    "1xx",
+		IsTitle: true,
 		Summary: "Informational response",
 		Description: `https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#1xx_Informational_response`,
@@ -61,6 +75,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/103`,
 	},
 	{
 		Name:    "2xx",
+		IsTitle: true,
 		Summary: "Successful responses",
 		Description: `https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success`,
@@ -156,6 +171,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Status`,
 	},
 	{
 		Name:    "3xx",
+		IsTitle: true,
 		Summary: "Redirection messages",
 		Description: `https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_Redirection`,
@@ -241,6 +257,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/308`,
 	},
 	{
 		Name:    "4xx",
+		IsTitle: true,
 		Summary: "Client error responses",
 		Description: `https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_errors`,
@@ -512,6 +529,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/451`,
 	},
 	{
 		Name:    "5xx",
+		IsTitle: true,
 		Summary: "Server error responses",
 		Description: `https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_Server_errors`,
