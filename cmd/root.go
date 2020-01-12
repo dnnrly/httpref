@@ -17,6 +17,12 @@ var rootCmd = &cobra.Command{
 	Short: "Command line access to HTTP references",
 	Long: `This displays useful information related to HTTP.
 
+It will prefer exact matches where there are mutliple entries matching
+the filter (e.g. Accept and Accept-Language). If you want to match
+everything with the same prefix then you can use * as a wildcard suffix,
+for example:
+    httpref 'Accept*'
+
 Most of the content comes from the Mozilla developer
 documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP)
 and is copyright Mozilla and individual contributors. See
@@ -59,7 +65,7 @@ func root(cmd *cobra.Command, args []string) error {
 func printResults(results httpref.References) {
 	switch len(results) {
 	case 0:
-		fmt.Fprintf(os.Stderr, "Name note recognised\n")
+		fmt.Fprintf(os.Stderr, "Filter not found any results\n")
 		os.Exit(1)
 	case 1:
 		fmt.Printf("%s - %s\n\n%s\n", results[0].Name, results[0].Summary, results[0].Description)

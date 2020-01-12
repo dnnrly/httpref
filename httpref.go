@@ -14,7 +14,14 @@ type References []Reference
 func (r References) ByName(code string) References {
 	results := References{}
 
+	wildcard := strings.HasSuffix(code, "*")
+	code = strings.ReplaceAll(code, "*", "")
+
 	for _, v := range r {
+		if !wildcard && v.Name == code {
+			return References{v}
+		}
+
 		if strings.HasPrefix(v.Name, code) {
 			results = append(results, v)
 		}

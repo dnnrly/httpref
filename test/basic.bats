@@ -26,3 +26,21 @@ BIN=./httpref
     [ $status -eq 0 ]
 }
 
+@test "Finds unique entry on exact match on root" {
+    run ${BIN} Accept
+    [ $status -eq 0 ]
+    [ "$(echo $output | grep -c '/docs/Web/HTTP/Headers/Accept$')" -eq 1 ]
+}
+
+@test "Wildcard matching works on root" {
+    run ${BIN} 'Accept*'
+    [ $status -eq 0 ]
+    [ "$(echo $output | grep -c '/docs/Web/HTTP/Headers/Accept$')" -eq 0 ]
+}
+
+@test "Finds unique entry on exact match on headers" {
+    run ${BIN} headers Accept
+    [ $status -eq 0 ]
+    [ "$(echo $output | grep -c '/docs/Web/HTTP/Headers/Accept$')" -eq 1 ]
+}
+
