@@ -13,6 +13,7 @@ var titles = false
 // rootCmd represents the base command when ctitlesed without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "httpref [filter]",
+	Args:  cobra.MaximumNArgs(1),
 	Short: "Command line access to HTTP references",
 	Long: `This displays useful information related to HTTP.
 
