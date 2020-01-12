@@ -8,20 +8,24 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var all = false
+var titles = false
 
-// rootCmd represents the base command when called without any subcommands
+// rootCmd represents the base command when ctitlesed without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "httpref [item]",
+	Use:   "httpref [filter]",
 	Short: "Command line access to HTTP references",
 	Long: `This displays useful information related to HTTP.
 
-Most of the content comes from the Mozilla developer documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP) and is copyright Mozilla and individual contributors. See https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses for details.`,
+Most of the content comes from the Mozilla developer
+documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP)
+and is copyright Mozilla and individual contributors. See
+https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses
+for details.`,
 	RunE: root,
 }
 
-// Execute adds all child commands to the root command and sets flags appropriately.
-// This is called by main.main(). It only needs to happen once to the rootCmd.
+// Execute adds titles child commands to the root command and sets flags appropriately.
+// This is ctitlesed by main.main(). It only needs to happen once to the rootCmd.
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)
@@ -30,13 +34,13 @@ func Execute() {
 }
 
 func init() {
-	rootCmd.PersistentFlags().BoolVarP(&all, "all", "", all, "List all of the summaries available")
+	rootCmd.PersistentFlags().BoolVarP(&titles, "titles", "", titles, "List titles of the summaries available")
 }
 
 func root(cmd *cobra.Command, args []string) error {
 	results := append(httpref.Statuses.Titles(), httpref.Headers.Titles()...)
 
-	if !all {
+	if !titles {
 		if len(args) == 0 {
 			fmt.Fprintf(os.Stderr, "Must specify something to filter by\n")
 			os.Exit(1)
