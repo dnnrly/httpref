@@ -20,15 +20,16 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// statusCmd represents the status command
-var statusCmd = &cobra.Command{
-	Use:   "status [filter]",
-	Short: "References for HTTP status codes",
+// headersCmd represents the headers command
+var headersCmd = &cobra.Command{
+	Use:     "headers",
+	Aliases: []string{"header"},
+	Short:   "References for common HTTP headers",
 	Long: `This displays useful information related to HTTP.
 
 Most of the content comes from the Mozilla developer documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP) and is copyright Mozilla and individual contributors. See https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses for details.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		results := httpref.Statuses
+		results := httpref.Headers
 
 		if len(args) == 0 {
 			results = results.Titles()
@@ -41,5 +42,5 @@ Most of the content comes from the Mozilla developer documentation (https://deve
 }
 
 func init() {
-	rootCmd.AddCommand(statusCmd)
+	rootCmd.AddCommand(headersCmd)
 }
