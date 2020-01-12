@@ -8,6 +8,7 @@ func Test_Anything(t *testing.T) {
 }
 
 func TestReferences_ByName(t *testing.T) {
+	Statuses = append(Statuses, Reference{Name: "501-extended"})
 	type args struct {
 		code string
 	}
@@ -18,6 +19,7 @@ func TestReferences_ByName(t *testing.T) {
 		{name: "1", want: 5},
 		{name: "40", want: 10},
 		{name: "501", want: 1},
+		{name: "501*", want: 2},
 	}
 
 	for _, tt := range tests {

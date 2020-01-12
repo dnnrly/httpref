@@ -33,9 +33,9 @@ BIN=./httpref
 }
 
 @test "Wildcard matching works on root" {
-    run ${BIN} Accept\*
+    run ${BIN} 'Accept*'
     [ $status -eq 0 ]
-    [ "$(echo $output | grep -c '/docs/Web/HTTP/Headers/Accept$')" -gt 1 ]
+    [ "$(echo $output | grep -c '/docs/Web/HTTP/Headers/Accept$')" -eq 0 ]
 }
 
 @test "Finds unique entry on exact match on headers" {
