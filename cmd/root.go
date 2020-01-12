@@ -41,19 +41,19 @@ func root(cmd *cobra.Command, args []string) error {
 			fmt.Fprintf(os.Stderr, "Must specify a status code, or part of it\n")
 			os.Exit(1)
 		} else {
-			results = results.ByCode(args[0])
+			results = results.ByName(args[0])
 		}
 	}
 
 	switch len(results) {
 	case 0:
-		fmt.Fprintf(os.Stderr, "Code note recognised\n")
+		fmt.Fprintf(os.Stderr, "Name note recognised\n")
 		os.Exit(1)
 	case 1:
-		fmt.Printf("%s - %s\n\n%s\n", results[0].Code, results[0].Summary, results[0].Description)
+		fmt.Printf("%s - %s\n\n%s\n", results[0].Name, results[0].Summary, results[0].Description)
 	default:
 		for _, r := range results {
-			fmt.Printf("\t%s\t%s\n", r.Code, r.Summary)
+			fmt.Printf("\t%s\t%s\n", r.Name, r.Summary)
 		}
 	}
 
