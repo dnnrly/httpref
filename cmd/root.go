@@ -8,20 +8,25 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var all = false
+var titles = false
 
-// rootCmd represents the base command when called without any subcommands
+// rootCmd represents the base command when ctitlesed without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "httpref [item]",
+	Use:   "httpref [filter]",
+	Args:  cobra.MaximumNArgs(1),
 	Short: "Command line access to HTTP references",
 	Long: `This displays useful information related to HTTP.
 
-Most of the content comes from the Mozilla developer documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP) and is copyright Mozilla and individual contributors. See https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses for details.`,
+Most of the content comes from the Mozilla developer
+documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP)
+and is copyright Mozilla and individual contributors. See
+https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses
+for details.`,
 	RunE: root,
 }
 
-// Execute adds all child commands to the root command and sets flags appropriately.
-// This is called by main.main(). It only needs to happen once to the rootCmd.
+// Execute adds titles child commands to the root command and sets flags appropriately.
+// This is ctitlesed by main.main(). It only needs to happen once to the rootCmd.
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)
@@ -30,32 +35,37 @@ func Execute() {
 }
 
 func init() {
-	rootCmd.PersistentFlags().BoolVarP(&all, "all", "", all, "List all of the summaries available")
+	rootCmd.PersistentFlags().BoolVarP(&titles, "titles", "", titles, "List titles of the summaries available")
 }
 
 func root(cmd *cobra.Command, args []string) error {
-	results := httpref.Statuses
+	results := append(httpref.Statuses.Titles(), httpref.Headers.Titles()...)
 
-	if !all {
+	if !titles {
 		if len(args) == 0 {
-			fmt.Fprintf(os.Stderr, "Must specify a status code, or part of it\n")
+			fmt.Fprintf(os.Stderr, "Must specify something to filter by\n")
 			os.Exit(1)
 		} else {
-			results = results.ByCode(args[0])
+			results = append(httpref.Statuses, httpref.Headers...)
+			results = results.ByName(args[0])
 		}
 	}
 
-	switch len(results) {
-	case 0:
-		fmt.Fprintf(os.Stderr, "Code note recognised\n")
-		os.Exit(1)
-	case 1:
-		fmt.Printf("%s - %s\n\n%s\n", results[0].Code, results[0].Summary, results[0].Description)
-	default:
-		for _, r := range results {
-			fmt.Printf("\t%s\t%s\n", r.Code, r.Summary)
-		}
-	}
+	printResults(results)
 
 	return nil
+}
+
+func printResults(results httpref.References) {
+	switch len(results) {
+	case 0:
+		fmt.Fprintf(os.Stderr, "Name note recognised\n")
+		os.Exit(1)
+	case 1:
+		fmt.Printf("%s - %s\n\n%s\n", results[0].Name, results[0].Summary, results[0].Description)
+	default:
+		for _, r := range results {
+			fmt.Printf("\t%s\t%s\n", r.Name, r.Summary)
+		}
+	}
 }

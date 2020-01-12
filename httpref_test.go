@@ -7,7 +7,7 @@ import (
 func Test_Anything(t *testing.T) {
 }
 
-func TestStatusRefs_ByCode(t *testing.T) {
+func TestReferences_ByName(t *testing.T) {
 	type args struct {
 		code string
 	}
@@ -22,8 +22,8 @@ func TestStatusRefs_ByCode(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := Statuses.ByCode(tt.name); len(got) != tt.want {
-				t.Errorf("StatusRefs.ByCode() = %v, want %v", len(got), tt.want)
+			if got := Statuses.ByName(tt.name); len(got) != tt.want {
+				t.Errorf("References.ByName() = %v, want %v", len(got), tt.want)
 			}
 		})
 	}
