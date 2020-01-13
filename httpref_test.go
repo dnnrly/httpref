@@ -2,9 +2,29 @@ package httpref
 
 import (
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
-func Test_Anything(t *testing.T) {
+func Test_Summary(t *testing.T) {
+	r := Reference{
+		Name:        "name",
+		Summary:     "summary",
+		Description: "description",
+	}
+
+	s := r.Summarize()
+	assert.Equal(t, "                          name summary", s)
+
+	r = Reference{
+		Name:        "title name",
+		IsTitle:     true,
+		Summary:     "title summary",
+		Description: "title description",
+	}
+
+	s = r.Summarize()
+	assert.Equal(t, "                    title name title summary", s)
 }
 
 func TestReferences_ByName(t *testing.T) {

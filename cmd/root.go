@@ -71,7 +71,7 @@ func printResults(results httpref.References) {
 		fmt.Printf("%s - %s\n\n%s\n", results[0].Name, results[0].Summary, results[0].Description)
 	default:
 		for _, r := range results {
-			fmt.Printf("\t%s\t%s\n", r.Name, r.Summary)
+			fmt.Printf("%s\n", r.Summarize())
 		}
 	}
 }

@@ -1,6 +1,9 @@
 package httpref
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 type Reference struct {
 	Name        string
@@ -10,6 +13,10 @@ type Reference struct {
 }
 
 type References []Reference
+
+func (r Reference) Summarize() string {
+	return fmt.Sprintf("%30s %s", r.Name, r.Summary)
+}
 
 func (r References) ByName(code string) References {
 	results := References{}
