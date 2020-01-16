@@ -68,7 +68,7 @@ func printResults(results httpref.References) {
 		fmt.Fprintf(os.Stderr, "Filter not found any results\n")
 		os.Exit(1)
 	case 1:
-		fmt.Printf("%s - %s\n\n%s\n", results[0].Name, results[0].Summary, results[0].Description)
+		fmt.Printf("%s\n", results[0].Describe())
 	default:
 		for _, r := range results {
 			fmt.Printf("%s\n", r.Summarize())

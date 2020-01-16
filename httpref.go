@@ -3,6 +3,12 @@ package httpref
 import (
 	"fmt"
 	"strings"
+
+	para "github.com/dnnrly/paragraphical"
+)
+
+const (
+	limit = 100
 )
 
 type Reference struct {
@@ -15,7 +21,21 @@ type Reference struct {
 type References []Reference
 
 func (r Reference) Summarize() string {
-	return fmt.Sprintf("%30s %s", r.Name, r.Summary)
+	return para.Format(
+		limit,
+		fmt.Sprintf("%s\n  %s", r.Name, r.Summary),
+	)
+}
+
+func (r Reference) Describe() string {
+	text := fmt.Sprintf(
+		"%s\n  %s\n\n%s",
+		r.Name,
+		r.Summary,
+		r.Description,
+	)
+
+	return para.Format(limit, text)
 }
 
 func (r References) ByName(code string) References {
