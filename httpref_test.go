@@ -1,6 +1,7 @@
 package httpref
 
 import (
+	"strings"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -30,7 +31,7 @@ func TestReferences_ByName(t *testing.T) {
 	}
 }
 
-func TestReference_Summarize(t *testing.T) {
+func TestReference_SummarizeContainsCorrectParts(t *testing.T) {
 	r := Reference{
 		Name:        "name",
 		Summary:     "summary",
@@ -38,66 +39,33 @@ func TestReference_Summarize(t *testing.T) {
 	}
 
 	s := r.Summarize()
-	assert.Equal(t, "                          name summary", s)
+	assert.Contains(t, s, "name")
+	assert.Contains(t, s, "summary")
+}
 
-	r = Reference{
+func TestReference_SummarizeLimitsLineLength(t *testing.T) {
+	r := Reference{
 		Name:        "title name",
 		IsTitle:     true,
-		Summary:     "title summary",
+		Summary:     "this is an extremely long line sfasfasdfsd werasasg asfgsdfgdsf sdfgdfs sdfg dsfg dsfg dsfg sdfg sfg a rwr sdfg sdfdffb sdfg dsg sfg dfsg sd",
 		Description: "title description",
 	}
 
-	s = r.Summarize()
-	assert.Equal(t, "                    title name title summary", s)
+	s := r.Summarize()
+	for i, line := range strings.Split(s, "\n") {
+		assert.True(t, len(line) < 100, "line %d is length %d - '%s'", i, len(line), line)
+	}
 }
 
-func TestReference_Describe(t *testing.T) {
-	description := Headers.ByName("Headers")[0].Describe()
+func TestReference_DescribeLimitsLength(t *testing.T) {
+	r := Headers.ByName("Headers")[0]
+	description := r.Describe()
 
-	expected := `HTTP headers let the client and the server pass additional information with an HTTP request or
-response. An HTTP header consists of its case-insensitive name followed by a colon (:), then by its
-value. Whitespace before the value is ignored.
-
-Custom proprietary headers have historically been used with an X- prefix, but this convention was
-:b3
-1:bd
-standard in RFC 6648; others are listed in an IANA registry, whose original content was defined in
-RFC 4229. IANA also maintains a registry of proposed new HTTP headers.
-
-Headers can be grouped according to their contexts:
-
-    General headers apply to both requests and responses, but with no relation to the data
-    transmitted in the body.
-    Request headers contain more information about the resource to be fetched, or about the client
-    requesting the resource.
-    Response headers hold additional information about the response, like its location or about the
-    server providing it.
-    Entity headers contain information about the body of the resource, like its content length or
-    MIME type.
-
-Headers can also be grouped according to how proxies handle them:
-
-    Connection
-    Keep-Alive
-    Proxy-Authenticate
-    Proxy-Authorization
-    TE
-    Trailer
-    Transfer-Encoding
-    Upgrade.
-
-End-to-end headers
-    These headers must be transmitted to the final recipient of the message: the server for a
-    request, or the client for a response. Intermediate proxies must retransmit these headers
-    unmodified and caches must store them.
-Hop-by-hop headers
-    These headers are meaningful only for a single transport-level connection, and must not be
-    retransmitted by proxies or cached. Note that only hop-by-hop headers may be set using the
-	Connection general header.
-
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers`
-
-	assert.Equal(t, expected, description)
+	assert.Contains(t, description, "HTTP")
+	assert.Contains(t, description, "apply")
+	for i, line := range strings.Split(description, "\n") {
+		assert.True(t, len(line) < 100, "line %d is length %d - '%s'", i, len(line), line)
+	}
 }
 
 func TestReferences_Titles(t *testing.T) {
