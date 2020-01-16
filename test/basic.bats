@@ -11,8 +11,23 @@ BIN=./httpref
     [ $status -eq 0 ]
 }
 
+@test "Check that filtering from alias status works" {
+    run ${BIN} statuses 1xx
+    [ $status -eq 0 ]
+}
+
 @test "Check that filtering from status works" {
     run ${BIN} status 1xx
+    [ $status -eq 0 ]
+}
+
+@test "Check that filtering from methods works" {
+    run ${BIN} methods GET
+    [ $status -eq 0 ]
+}
+
+@test "Check that filtering from methods alias works" {
+    run ${BIN} method GET
     [ $status -eq 0 ]
 }
 

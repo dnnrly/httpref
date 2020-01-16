@@ -42,6 +42,18 @@ func Execute() {
 
 func init() {
 	rootCmd.PersistentFlags().BoolVarP(&titles, "titles", "", titles, "List titles of the summaries available")
+	rootCmd.AddCommand(subCmd("methods", "method", httpref.Methods))
+	rootCmd.AddCommand(subCmd("statuses", "status", httpref.Statuses))
+	rootCmd.AddCommand(subCmd("headers", "header", httpref.Headers))
+}
+
+func subCmd(name, alias string, ref httpref.References) *cobra.Command {
+	return &cobra.Command{
+		Use:     fmt.Sprintf("%s [filter]", name),
+		Aliases: []string{alias},
+		Short:   fmt.Sprintf("References for common HTTP %s", name),
+		Run:     referenceCmd(ref),
+	}
 }
 
 func root(cmd *cobra.Command, args []string) error {
@@ -75,5 +87,19 @@ func printResults(results httpref.References) {
 		for _, r := range results {
 			fmt.Printf("%s\n", r.Summarize())
 		}
+	}
+}
+
+func referenceCmd(ref httpref.References) func(cmd *cobra.Command, args []string) {
+	return func(cmd *cobra.Command, args []string) {
+		results := ref
+
+		if len(args) == 0 {
+			results = results.Titles()
+		} else {
+			results = results.ByName(args[0])
+		}
+
+		printResults(results)
 	}
 }
