@@ -18,7 +18,8 @@ export PATH := $(BASE_DIR)/bin:$(PATH)
 
 .PHONY: install deps clean clean-deps test-deps build-deps deps test acceptance-test ci-test lint release update
 
-install: deps
+install:
+	$(GO_BIN) install -v ./cmd/$(NAME)
 
 build:
 	$(GO_BIN) build -v ./cmd/$(NAME)
