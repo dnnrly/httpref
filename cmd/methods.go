@@ -5,13 +5,12 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// headersCmd represents the headers command
-var headersCmd = &cobra.Command{
-	Use:     "headers",
-	Aliases: []string{"header"},
-	Short:   "References for common HTTP headers",
+// methodsCmd represents the headers command
+var methodsCmd = &cobra.Command{
+	Use:   "methods",
+	Short: "References for common HTTP methods",
 	Run: func(cmd *cobra.Command, args []string) {
-		results := httpref.Headers
+		results := httpref.Methods
 
 		if len(args) == 0 {
 			results = results.Titles()
@@ -24,5 +23,5 @@ var headersCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(headersCmd)
+	rootCmd.AddCommand(methodsCmd)
 }

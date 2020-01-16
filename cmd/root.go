@@ -46,6 +46,7 @@ func init() {
 
 func root(cmd *cobra.Command, args []string) error {
 	results := append(httpref.Statuses.Titles(), httpref.Headers.Titles()...)
+	results = append(results, httpref.Methods.Titles()...)
 
 	if !titles {
 		if len(args) == 0 {
@@ -53,6 +54,7 @@ func root(cmd *cobra.Command, args []string) error {
 			os.Exit(1)
 		} else {
 			results = append(httpref.Statuses, httpref.Headers...)
+			results = append(results, httpref.Methods...)
 			results = results.ByName(args[0])
 		}
 	}
