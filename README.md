@@ -2,6 +2,10 @@
 
 This is a handy little helper that puts HTTP reference at your fingertips, when you're on the CLI, when you need it.
 
+
+[![godoc](https://godoc.org/github.com/dnnrly/httpref?status.svg)](http://godoc.org/github.com/dnnrly/httpref)
+[![report card](https://goreportcard.com/badge/github.com/dnnrly/httpref)](https://goreportcard.com/report/github.com/dnnrly/httpref)
+
 ## But why?
 
 Because I can **never** remember what the bloody http status codes mean, or the details of methods, or whatever. It's annoying!
