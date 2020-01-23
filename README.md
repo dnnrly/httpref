@@ -6,6 +6,11 @@ This is a handy little helper that puts HTTP reference at your fingertips, when 
 [![godoc](https://godoc.org/github.com/dnnrly/httpref?status.svg)](http://godoc.org/github.com/dnnrly/httpref)
 [![report card](https://goreportcard.com/badge/github.com/dnnrly/httpref)](https://goreportcard.com/report/github.com/dnnrly/httpref)
 
+![GitHub watchers](https://img.shields.io/github/watchers/dnnrly/httpref?style=social)
+![GitHub stars](https://img.shields.io/github/stars/dnnrly/httpref?style=social)
+
+[![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fdnnrly%2Fhttpref)](https://twitter.com/intent/tweet?url=https://github.com/dnnrly/httpref)
+
 ## But why?
 
 Because I can **never** remember what the bloody http status codes mean, or the details of methods, or whatever. It's annoying!
