@@ -59,3 +59,12 @@ BIN=./httpref
     [ "$(echo $output | grep -c '/docs/Web/HTTP/Headers/Accept$')" -eq 1 ]
 }
 
+@test "Finds unique entry on exact match on headers" {
+    run ${BIN} -w 60 headers Accept
+    [ $status -eq 0 ]
+    for l in "${lines[@]}"
+    do
+        [ $(echo ${l} | wc -m) -lt 60 ]
+    done
+}
+

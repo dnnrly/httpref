@@ -8,7 +8,11 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var titles = false
+var (
+	titles  = false
+	colours = true
+	width   = 100
+)
 
 // rootCmd represents the base command when ctitlesed without any subcommands
 var rootCmd = &cobra.Command{
@@ -41,7 +45,10 @@ func Execute() {
 }
 
 func init() {
-	rootCmd.PersistentFlags().BoolVarP(&titles, "titles", "", titles, "List titles of the summaries available")
+	rootCmd.PersistentFlags().BoolVarP(&titles, "titles", "t", titles, "List titles of the summaries available")
+	rootCmd.PersistentFlags().IntVarP(&width, "width", "w", width, "Width to fit the output to")
+	rootCmd.PersistentFlags().BoolVarP(&colours, "colours", "c", colours, "Use colours in the output")
+
 	rootCmd.AddCommand(subCmd("methods", "method", httpref.Methods))
 	rootCmd.AddCommand(subCmd("statuses", "status", httpref.Statuses))
 	rootCmd.AddCommand(subCmd("headers", "header", httpref.Headers))
@@ -82,10 +89,10 @@ func printResults(results httpref.References) {
 		fmt.Fprintf(os.Stderr, "Filter not found any results\n")
 		os.Exit(1)
 	case 1:
-		fmt.Printf("%s\n", results[0].Describe())
+		fmt.Printf("%s\n", results[0].Describe(width))
 	default:
 		for _, r := range results {
-			fmt.Printf("%s\n", r.Summarize())
+			fmt.Printf("%s\n", r.Summarize(width))
 		}
 	}
 }

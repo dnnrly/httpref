@@ -7,10 +7,6 @@ import (
 	para "github.com/dnnrly/paragraphical"
 )
 
-const (
-	limit = 100
-)
-
 type Reference struct {
 	Name        string
 	IsTitle     bool
@@ -20,14 +16,14 @@ type Reference struct {
 
 type References []Reference
 
-func (r Reference) Summarize() string {
+func (r Reference) Summarize(width int) string {
 	return para.Format(
-		limit,
+		width,
 		fmt.Sprintf("%s\n  %s", r.Name, r.Summary),
 	)
 }
 
-func (r Reference) Describe() string {
+func (r Reference) Describe(width int) string {
 	text := fmt.Sprintf(
 		"%s\n  %s\n\n%s",
 		r.Name,
@@ -35,7 +31,7 @@ func (r Reference) Describe() string {
 		r.Description,
 	)
 
-	return para.Format(limit, text)
+	return para.Format(width, text)
 }
 
 func (r References) ByName(code string) References {
