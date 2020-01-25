@@ -60,7 +60,7 @@ BIN=./httpref
 }
 
 @test "Finds unique entry on exact match on headers" {
-    run ${BIN} -w 60 headers Accept
+    run ${BIN} -w 60 headers 100
     [ $status -eq 0 ]
     for l in "${lines[@]}"
     do
