@@ -64,7 +64,7 @@ BIN=./httpref
     [ $status -eq 0 ]
     for l in "${lines[@]}"
     do
-        [ $(echo ${l} | wc -m) -lt 60 ]
+        [ $(echo ${l} | wc -m) -le 60 ]
     done
 }
 
