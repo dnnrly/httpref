@@ -6,28 +6,26 @@ import (
 
 	"github.com/dnnrly/httpref"
 	"github.com/spf13/cobra"
+
+	"github.com/dnnrly/paragraphical"
 )
 
-var titles = false
+var (
+	titles  = false
+	width   = 100
+)
 
 // rootCmd represents the base command when ctitlesed without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "httpref [filter]",
 	Args:  cobra.MaximumNArgs(1),
 	Short: "Command line access to HTTP references",
-	Long: `This displays useful information related to HTTP.
+	Long: paragraphical.Format(width, `This displays useful information related to HTTP.
 
-It will prefer exact matches where there are mutliple entries matching
-the filter (e.g. Accept and Accept-Language). If you want to match
-everything with the same prefix then you can use * as a wildcard suffix,
-for example:
+It will prefer exact matches where there are mutliple entries matching the filter (e.g. Accept and Accept-Language). If you want to match everything with the same prefix then you can use * as a wildcard suffix, for example:
     httpref 'Accept*'
 
-Most of the content comes from the Mozilla developer
-documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP)
-and is copyright Mozilla and individual contributors. See
-https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses
-for details.`,
+Most of the content comes from the Mozilla developer documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP) and is copyright Mozilla and individual contributors. See https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses for details.`),
 	RunE: root,
 }
 
@@ -41,7 +39,9 @@ func Execute() {
 }
 
 func init() {
-	rootCmd.PersistentFlags().BoolVarP(&titles, "titles", "", titles, "List titles of the summaries available")
+	rootCmd.PersistentFlags().BoolVarP(&titles, "titles", "t", titles, "List titles of the summaries available")
+	rootCmd.PersistentFlags().IntVarP(&width, "width", "w", width, "Width to fit the output to")
+
 	rootCmd.AddCommand(subCmd("methods", "method", httpref.Methods))
 	rootCmd.AddCommand(subCmd("statuses", "status", httpref.Statuses))
 	rootCmd.AddCommand(subCmd("headers", "header", httpref.Headers))
@@ -82,10 +82,10 @@ func printResults(results httpref.References) {
 		fmt.Fprintf(os.Stderr, "Filter not found any results\n")
 		os.Exit(1)
 	case 1:
-		fmt.Printf("%s\n", results[0].Describe())
+		fmt.Printf("%s\n", results[0].Describe(width))
 	default:
 		for _, r := range results {
-			fmt.Printf("%s\n", r.Summarize())
+			fmt.Printf("%s\n", r.Summarize(width))
 		}
 	}
 }

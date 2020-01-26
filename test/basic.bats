@@ -59,3 +59,11 @@ BIN=./httpref
     [ "$(echo $output | grep -c '/docs/Web/HTTP/Headers/Accept$')" -eq 1 ]
 }
 
+@test "Can change the width of the output" {
+    run ${BIN} -w 70 100
+    [ $status -eq 0 ]
+    for l in "${lines[@]}"
+    do
+        [ $(echo ${l} | wc -m) -le 70 ]
+    done
+}

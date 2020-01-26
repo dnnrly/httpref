@@ -5,10 +5,7 @@ import (
 	"strings"
 
 	para "github.com/dnnrly/paragraphical"
-)
-
-const (
-	limit = 100
+	"github.com/muesli/termenv"
 )
 
 type Reference struct {
@@ -20,22 +17,24 @@ type Reference struct {
 
 type References []Reference
 
-func (r Reference) Summarize() string {
+func (r Reference) Summarize(width int) string {
+	name := termenv.String(r.Name)
+	summary := termenv.String(r.Summary).Italic()
 	return para.Format(
-		limit,
-		fmt.Sprintf("%s\n  %s", r.Name, r.Summary),
+		width,
+		fmt.Sprintf("%s\n  %s", name.Bold().Underline(), summary),
 	)
 }
 
-func (r Reference) Describe() string {
+func (r Reference) Describe(width int) string {
 	text := fmt.Sprintf(
 		"%s\n  %s\n\n%s",
-		r.Name,
-		r.Summary,
+		termenv.String(r.Name).Bold().Underline(),
+		termenv.String(r.Summary).Italic(),
 		r.Description,
 	)
 
-	return para.Format(limit, text)
+	return para.Format(width, text)
 }
 
 func (r References) ByName(code string) References {
