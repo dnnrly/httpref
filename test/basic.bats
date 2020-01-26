@@ -60,15 +60,6 @@ BIN=./httpref
 }
 
 @test "Can change the width of the output" {
-    run ${BIN} --no-colours -w 70 100
-    [ $status -eq 0 ]
-    for l in "${lines[@]}"
-    do
-        [ $(echo ${l} | wc -m) -le 70 ]
-    done
-}
-
-@test "Outputs have colours" {
     run ${BIN} -w 70 100
     [ $status -eq 0 ]
     for l in "${lines[@]}"
