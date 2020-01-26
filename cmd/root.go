@@ -12,7 +12,6 @@ import (
 
 var (
 	titles  = false
-	colours = true
 	width   = 100
 )
 
@@ -42,7 +41,6 @@ func Execute() {
 func init() {
 	rootCmd.PersistentFlags().BoolVarP(&titles, "titles", "t", titles, "List titles of the summaries available")
 	rootCmd.PersistentFlags().IntVarP(&width, "width", "w", width, "Width to fit the output to")
-	rootCmd.PersistentFlags().BoolVarP(&colours, "colours", "c", colours, "Use colours in the output")
 
 	rootCmd.AddCommand(subCmd("methods", "method", httpref.Methods))
 	rootCmd.AddCommand(subCmd("statuses", "status", httpref.Statuses))
