@@ -65,16 +65,16 @@ build-deps: ./bin/goreleaser
 
 deps: build-deps test-deps
 
-test:
+test: ./bin/tparse
 	$(GO_BIN) test -json ./... | tparse -all
 
-acceptance-test:
+acceptance-test: ./bin/bats
 	bats --tap test/*.bats
 
 ci-test:
 	$(GO_BIN) test -race -coverprofile=coverage.txt -covermode=atomic ./...
 
-lint:
+lint: ./bin/golangci-lint
 	golangci-lint run
 
 release: clean
