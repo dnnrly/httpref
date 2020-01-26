@@ -6,6 +6,8 @@ import (
 
 	"github.com/dnnrly/httpref"
 	"github.com/spf13/cobra"
+
+	"github.com/dnnrly/paragraphical"
 )
 
 var (
@@ -19,19 +21,12 @@ var rootCmd = &cobra.Command{
 	Use:   "httpref [filter]",
 	Args:  cobra.MaximumNArgs(1),
 	Short: "Command line access to HTTP references",
-	Long: `This displays useful information related to HTTP.
+	Long: paragraphical.Format(width, `This displays useful information related to HTTP.
 
-It will prefer exact matches where there are mutliple entries matching
-the filter (e.g. Accept and Accept-Language). If you want to match
-everything with the same prefix then you can use * as a wildcard suffix,
-for example:
+It will prefer exact matches where there are mutliple entries matching the filter (e.g. Accept and Accept-Language). If you want to match everything with the same prefix then you can use * as a wildcard suffix, for example:
     httpref 'Accept*'
 
-Most of the content comes from the Mozilla developer
-documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP)
-and is copyright Mozilla and individual contributors. See
-https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses
-for details.`,
+Most of the content comes from the Mozilla developer documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP) and is copyright Mozilla and individual contributors. See https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses for details.`),
 	RunE: root,
 }
 
