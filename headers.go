@@ -50,7 +50,7 @@ The WWW-Authenticate header is sent along with a 401 Unauthorized response.
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate`,
 	},
 	{
-		Name:    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization",
+		Name:    "Authorization",
 		Summary: "Contains the credentials to authenticate a user-agent with a server.",
 		Description: `The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.
 
