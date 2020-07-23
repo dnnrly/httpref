@@ -67,3 +67,15 @@ BIN=./httpref
         [ $(echo ${l} | wc -m) -le 70 ]
     done
 }
+
+@test "You can get the information for a single port" {
+    run ${BIN} 80
+    [ $status -eq 0 ]
+    [ "$(echo $output | grep -c 'Hypertext Transfer Protocol (HTTP)$')" -eq 1 ]
+}
+
+@test "You can get filter by ports only" {
+    run ${BIN} ports 4
+    [ $status -eq 0 ]
+    [ "$(echo $output | grep -c '^4')" -eq 50 ]
+}
