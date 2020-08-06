@@ -1,5 +1,6 @@
 package httpref
 
+// Methods represents all of the defined HTTP methods
 var Methods = References{
 	{
 		Name:    "Methods",

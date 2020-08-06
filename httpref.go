@@ -8,6 +8,7 @@ import (
 	"github.com/muesli/termenv"
 )
 
+// Reference is a single reference item
 type Reference struct {
 	Name        string
 	IsTitle     bool
@@ -15,8 +16,10 @@ type Reference struct {
 	Description string
 }
 
+// References is a collection of Reference objects
 type References []Reference
 
+// Summarize creates a block of text that summarizes this reference
 func (r Reference) Summarize(width int) string {
 	name := termenv.String(r.Name)
 	summary := termenv.String(r.Summary).Italic()
@@ -26,6 +29,7 @@ func (r Reference) Summarize(width int) string {
 	)
 }
 
+// Describe creates a full, formated description of a reference
 func (r Reference) Describe(width int) string {
 	text := fmt.Sprintf(
 		"%s\n  %s\n\n%s",
@@ -37,6 +41,7 @@ func (r Reference) Describe(width int) string {
 	return para.Format(width, text)
 }
 
+// ByName finds all of the Reference with a matching Name field
 func (r References) ByName(code string) References {
 	results := References{}
 
@@ -56,6 +61,7 @@ func (r References) ByName(code string) References {
 	return results
 }
 
+// Titles gives all of the Reference objects marked as a title
 func (r References) Titles() References {
 	results := References{}
 
@@ -68,6 +74,7 @@ func (r References) Titles() References {
 	return results
 }
 
+// Statuses represents all of the defined HTTP statuses
 var Statuses = References{
 	{
 		Name:    "1xx",
