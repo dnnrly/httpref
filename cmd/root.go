@@ -11,8 +11,8 @@ import (
 )
 
 var (
-	titles  = false
-	width   = 100
+	titles = false
+	width  = 100
 )
 
 // rootCmd represents the base command when ctitlesed without any subcommands
@@ -45,6 +45,12 @@ func init() {
 	rootCmd.AddCommand(subCmd("methods", "method", httpref.Methods))
 	rootCmd.AddCommand(subCmd("statuses", "status", httpref.Statuses))
 	rootCmd.AddCommand(subCmd("headers", "header", httpref.Headers))
+	rootCmd.AddCommand(&cobra.Command{
+		Use:     fmt.Sprintf("%s [filter]", "ports"),
+		Aliases: []string{"port"},
+		Short:   "References for common ports",
+		Run:     referenceCmd(append(httpref.ReservedPorts, httpref.RegisteredPorts...)),
+	})
 }
 
 func subCmd(name, alias string, ref httpref.References) *cobra.Command {

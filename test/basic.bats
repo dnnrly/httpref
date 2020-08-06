@@ -71,7 +71,7 @@ BIN=./httpref
 @test "You can get the information for a single port" {
     run ${BIN} 80
     [ $status -eq 0 ]
-    [ "$(echo $output | grep -c 'Hypertext Transfer Protocol (HTTP)$')" -eq 1 ]
+    [ "$(echo $output | grep -c 'Hypertext Transfer Protocol.+(HTTP)')" -eq 1 ]
 }
 
 @test "You can get filter by ports only" {
