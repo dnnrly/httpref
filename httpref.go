@@ -61,6 +61,24 @@ func (r References) ByName(code string) References {
 	return results
 }
 
+// InRange attempts to find a numeric in a range in the Name field
+func (r References) InRange(code string) References {
+	for _, v := range r {
+		if v.Name == code {
+			return References{v}
+		}
+
+		if strings.Contains(v.Name, "-") {
+			parts := strings.Split(v.Name, "-")
+			if code >= parts[0] || code <= parts[len(parts)-1] {
+				return References{v}
+			}
+		}
+	}
+
+	return References{}
+}
+
 // Titles gives all of the Reference objects marked as a title
 func (r References) Titles() References {
 	results := References{}
