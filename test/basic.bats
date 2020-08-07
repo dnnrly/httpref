@@ -67,3 +67,20 @@ BIN=./httpref
         [ $(echo ${l} | wc -m) -le 70 ]
     done
 }
+
+@test "Ports do not appear in the normal searches" {
+    run ${BIN} 80
+    [ $status -ne 0 ]
+}
+
+@test "You can get the information for a single port" {
+    run ${BIN} port 80
+    [ $status -eq 0 ]
+    [ "$(echo $output | grep -c 'Hypertext Transfer Protocol')" -eq 1 ]
+}
+
+@test "You can look up a port that is in a range" {
+    run ${BIN} ports 47809
+    [ $status -eq 0 ]
+    [ "$(echo $output | grep -c 'Filter not found any results')" -eq 0 ]
+}

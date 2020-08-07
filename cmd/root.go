@@ -11,8 +11,8 @@ import (
 )
 
 var (
-	titles  = false
-	width   = 100
+	titles = false
+	width  = 100
 )
 
 // rootCmd represents the base command when ctitlesed without any subcommands
@@ -25,7 +25,9 @@ var rootCmd = &cobra.Command{
 It will prefer exact matches where there are mutliple entries matching the filter (e.g. Accept and Accept-Language). If you want to match everything with the same prefix then you can use * as a wildcard suffix, for example:
     httpref 'Accept*'
 
-Most of the content comes from the Mozilla developer documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP) and is copyright Mozilla and individual contributors. See https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses for details.`),
+Most of the content comes from the Mozilla developer documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP) and is copyright Mozilla and individual contributors. See https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses for details.
+
+Ports can only be looked up using the 'ports' sub command. You can also look up ports inside a range. Information on ports comes from https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers under the Creative Commons Attribution-ShareAlike License.`),
 	RunE: root,
 }
 
@@ -45,6 +47,12 @@ func init() {
 	rootCmd.AddCommand(subCmd("methods", "method", httpref.Methods))
 	rootCmd.AddCommand(subCmd("statuses", "status", httpref.Statuses))
 	rootCmd.AddCommand(subCmd("headers", "header", httpref.Headers))
+	rootCmd.AddCommand(&cobra.Command{
+		Use:     fmt.Sprintf("%s [filter]", "ports"),
+		Aliases: []string{"port"},
+		Short:   "References for common ports",
+		Run:     portsReference(),
+	})
 }
 
 func subCmd(name, alias string, ref httpref.References) *cobra.Command {
@@ -59,6 +67,8 @@ func subCmd(name, alias string, ref httpref.References) *cobra.Command {
 func root(cmd *cobra.Command, args []string) error {
 	results := append(httpref.Statuses.Titles(), httpref.Headers.Titles()...)
 	results = append(results, httpref.Methods.Titles()...)
+	results = append(results, httpref.WellKnownPorts.Titles()...)
+	results = append(results, httpref.RegisteredPorts.Titles()...)
 
 	if !titles {
 		if len(args) == 0 {
@@ -99,6 +109,26 @@ func referenceCmd(ref httpref.References) func(cmd *cobra.Command, args []string
 		} else {
 			results = results.ByName(args[0])
 		}
+
+		printResults(results)
+	}
+}
+
+func portsReference() func(cmd *cobra.Command, args []string) {
+	return func(cmd *cobra.Command, args []string) {
+		ref := append(httpref.WellKnownPorts, httpref.RegisteredPorts...)
+		var results httpref.References
+
+		if len(args) == 0 {
+			results = ref.Titles()
+		} else {
+			results = ref.ByName(args[0])
+			
+			if len(results) == 0 {
+				results = ref.InRange(args[0])
+			}
+		}
+
 
 		printResults(results)
 	}

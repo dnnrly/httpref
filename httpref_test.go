@@ -31,6 +31,26 @@ func TestReferences_ByName(t *testing.T) {
 	}
 }
 
+func TestReferences_InRange(t *testing.T) {
+	type args struct {
+		code string
+	}
+	tests := []string{
+		"19150",
+		"16406",
+		"5988",
+		"5989",
+	}
+
+	for _, tt := range tests {
+		t.Run(tt, func(t *testing.T) {
+			if got := RegisteredPorts.InRange(tt); len(got) != 1 {
+				t.Errorf("References.InRange() = %v, want %v", len(got), 1)
+			}
+		})
+	}
+}
+
 func TestReference_SummarizeContainsCorrectParts(t *testing.T) {
 	r := Reference{
 		Name:        "name",

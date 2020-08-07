@@ -1,5 +1,6 @@
 package httpref
 
+// Headers is the list of all known standard HTTP headers
 var Headers = References{
 	{
 		Name:    "Headers",
