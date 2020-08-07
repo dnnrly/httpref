@@ -49,7 +49,7 @@ func init() {
 		Use:     fmt.Sprintf("%s [filter]", "ports"),
 		Aliases: []string{"port"},
 		Short:   "References for common ports",
-		Run:     referenceCmd(append(httpref.ReservedPorts, httpref.RegisteredPorts...)),
+		Run:     referenceCmd(append(httpref.WellKnownPorts, httpref.RegisteredPorts...)),
 	})
 }
 
@@ -65,6 +65,8 @@ func subCmd(name, alias string, ref httpref.References) *cobra.Command {
 func root(cmd *cobra.Command, args []string) error {
 	results := append(httpref.Statuses.Titles(), httpref.Headers.Titles()...)
 	results = append(results, httpref.Methods.Titles()...)
+	results = append(results, httpref.WellKnownPorts.Titles()...)
+	results = append(results, httpref.RegisteredPorts.Titles()...)
 
 	if !titles {
 		if len(args) == 0 {
@@ -73,6 +75,8 @@ func root(cmd *cobra.Command, args []string) error {
 		} else {
 			results = append(httpref.Statuses, httpref.Headers...)
 			results = append(results, httpref.Methods...)
+			results = append(results, httpref.WellKnownPorts...)
+			results = append(results, httpref.RegisteredPorts...)
 			results = results.ByName(args[0])
 		}
 	}

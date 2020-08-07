@@ -3,6 +3,14 @@ package httpref
 // RegisteredPorts is the list of all known IANA registered ports
 var RegisteredPorts = References{
 	{
+		Name:    "Registered Ports",
+		IsTitle: true,
+		Summary: "The range of port numbers from 1024 to 49151 (2^10 to 2^14 + 2^15 − 1)",
+		Description: `The range of port numbers from 1024 to 49151 (210 to 214 + 215 − 1) are the registered ports. They are assigned by IANA for specific service upon application by a requesting entity.[1] On most systems, registered ports can be used without superuser privileges.
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
 		Name: "1024",
 		Description: `
 Reserved
@@ -11,7 +19,9 @@ IANA Status - Official
 TCP         - Reserved
 UDP         - Reserved
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1027",
@@ -29,7 +39,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1028",
@@ -40,7 +52,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1029",
@@ -51,7 +65,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1058",
@@ -62,7 +78,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1059",
@@ -73,7 +91,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1080",
@@ -84,7 +104,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1085",
@@ -95,7 +117,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1098",
@@ -106,7 +130,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1099",
@@ -117,7 +143,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1109",
@@ -135,7 +163,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1113",
@@ -146,7 +176,9 @@ IANA Status - Official
 TCP         - "Assigned"
 UDP         - "Yes"
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1119",
@@ -157,7 +189,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1167",
@@ -168,7 +202,9 @@ IANA Status - Official
 TCP         - Yes, and SCTP
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1194",
@@ -179,7 +215,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1198",
@@ -190,7 +228,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1214",
@@ -201,7 +241,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1218",
@@ -212,7 +254,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1220",
@@ -223,7 +267,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1234",
@@ -241,7 +287,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1241",
@@ -252,7 +300,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1270",
@@ -263,7 +313,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1293",
@@ -274,7 +326,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1311",
@@ -292,7 +346,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1314",
@@ -303,7 +359,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1337",
@@ -335,7 +393,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1341",
@@ -346,7 +406,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1344",
@@ -357,7 +419,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1352",
@@ -368,7 +432,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1360",
@@ -379,7 +445,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1414",
@@ -390,7 +458,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1417",
@@ -401,7 +471,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1418",
@@ -412,7 +484,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1419",
@@ -423,7 +497,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1420",
@@ -434,7 +510,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1431",
@@ -445,7 +523,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1433",
@@ -456,7 +536,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1434",
@@ -467,7 +549,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1481",
@@ -478,7 +562,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1492",
@@ -489,7 +575,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1494",
@@ -500,7 +588,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1500",
@@ -511,7 +601,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1501",
@@ -522,7 +614,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1503",
@@ -533,7 +627,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1512",
@@ -544,7 +640,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1513",
@@ -555,7 +653,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1521",
@@ -573,7 +673,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1524",
@@ -584,7 +686,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1527",
@@ -602,7 +706,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1533",
@@ -613,7 +719,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1534",
@@ -624,7 +732,9 @@ IANA Status - Unofficial
 TCP         - No
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1540",
@@ -635,7 +745,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1541",
@@ -646,7 +758,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1542",
@@ -657,7 +771,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1545",
@@ -668,7 +784,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1547",
@@ -679,7 +797,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1550",
@@ -697,7 +817,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1560–1590",
@@ -708,7 +830,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1581",
@@ -726,7 +850,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1582–1583",
@@ -737,7 +863,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1583",
@@ -748,7 +876,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1589",
@@ -759,7 +889,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1604",
@@ -770,7 +902,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1626",
@@ -781,7 +915,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1627",
@@ -792,7 +928,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1628",
@@ -803,7 +941,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1629",
@@ -814,7 +954,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1645",
@@ -825,7 +967,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1646",
@@ -836,7 +980,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1666",
@@ -847,7 +993,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1677",
@@ -858,7 +1006,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1688",
@@ -869,7 +1019,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1701",
@@ -887,7 +1039,9 @@ IANA Status - Official
 TCP         - Assigned
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1707",
@@ -905,7 +1059,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1716",
@@ -916,7 +1072,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1719",
@@ -927,7 +1085,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1720",
@@ -938,7 +1098,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1723",
@@ -949,7 +1111,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1755",
@@ -960,7 +1124,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1761",
@@ -971,7 +1137,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1783",
@@ -982,7 +1150,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1801",
@@ -993,7 +1163,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1812",
@@ -1004,7 +1176,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1813",
@@ -1015,7 +1189,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1863",
@@ -1026,7 +1202,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1880",
@@ -1037,7 +1215,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1883",
@@ -1048,7 +1228,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1900",
@@ -1059,7 +1241,9 @@ IANA Status - Official
 TCP         - Assigned
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1935",
@@ -1077,7 +1261,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1967",
@@ -1088,7 +1274,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1970",
@@ -1099,7 +1287,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1972",
@@ -1110,7 +1300,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1984",
@@ -1121,7 +1313,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1985",
@@ -1132,7 +1326,9 @@ IANA Status - Official
 TCP         - Assigned
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "1998",
@@ -1143,7 +1339,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2000",
@@ -1154,7 +1352,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2010",
@@ -1165,7 +1365,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2033",
@@ -1176,7 +1378,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2049",
@@ -1187,7 +1391,9 @@ IANA Status - Official
 TCP         - Yes, and SCTP
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2056",
@@ -1198,7 +1404,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2080",
@@ -1209,7 +1417,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2082",
@@ -1220,7 +1430,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2083",
@@ -1238,7 +1450,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2086",
@@ -1256,7 +1470,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2087",
@@ -1267,7 +1483,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2095",
@@ -1278,7 +1496,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2096",
@@ -1289,7 +1509,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2100",
@@ -1300,7 +1522,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2101",
@@ -1311,7 +1535,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2102",
@@ -1322,7 +1548,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2103",
@@ -1333,7 +1561,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2104",
@@ -1344,7 +1574,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2123",
@@ -1355,7 +1587,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2142",
@@ -1366,7 +1600,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2152",
@@ -1377,7 +1613,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2159",
@@ -1388,7 +1626,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2181",
@@ -1406,7 +1646,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2195",
@@ -1417,7 +1659,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2196",
@@ -1428,7 +1672,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2210",
@@ -1439,7 +1685,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2211",
@@ -1450,7 +1698,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2221",
@@ -1461,7 +1711,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2222",
@@ -1479,7 +1731,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2222–2226",
@@ -1490,7 +1744,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2240",
@@ -1501,7 +1757,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2261",
@@ -1512,7 +1770,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2262",
@@ -1523,7 +1783,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2302",
@@ -1541,7 +1803,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2303",
@@ -1559,7 +1823,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2305",
@@ -1570,7 +1836,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2351",
@@ -1581,7 +1849,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2368",
@@ -1592,7 +1862,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2369",
@@ -1603,7 +1875,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2370",
@@ -1614,7 +1888,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2372",
@@ -1625,7 +1901,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2375",
@@ -1636,7 +1914,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Reserved
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2376",
@@ -1647,7 +1927,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Reserved
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2377",
@@ -1658,7 +1940,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Reserved
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2379",
@@ -1676,7 +1960,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2380",
@@ -1687,7 +1973,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Reserved
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2389",
@@ -1698,7 +1986,9 @@ IANA Status - Official
 TCP         - Assigned
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2399",
@@ -1709,7 +1999,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2401",
@@ -1720,7 +2012,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2404",
@@ -1731,7 +2025,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2424",
@@ -1742,7 +2038,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2427",
@@ -1753,7 +2051,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2447",
@@ -1764,7 +2064,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2459",
@@ -1775,7 +2077,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2480",
@@ -1786,7 +2090,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2483",
@@ -1797,7 +2103,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2484",
@@ -1808,7 +2116,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2500",
@@ -1819,7 +2129,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2501",
@@ -1830,7 +2142,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2535",
@@ -1841,7 +2155,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2541",
@@ -1852,7 +2168,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2546–2548",
@@ -1863,7 +2181,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2593",
@@ -1874,7 +2194,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2598",
@@ -1885,7 +2207,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2599",
@@ -1896,7 +2220,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2628",
@@ -1907,7 +2233,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2638",
@@ -1918,7 +2246,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2710",
@@ -1929,7 +2259,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2727",
@@ -1940,7 +2272,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2775",
@@ -1951,7 +2285,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2809",
@@ -1962,7 +2298,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2811",
@@ -1973,7 +2311,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2827",
@@ -1984,7 +2324,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2944",
@@ -1995,7 +2337,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2945",
@@ -2006,7 +2350,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2947",
@@ -2017,7 +2363,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2948",
@@ -2028,7 +2376,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2949",
@@ -2039,7 +2389,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "2967",
@@ -2050,7 +2402,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3000",
@@ -2089,7 +2443,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3004",
@@ -2100,7 +2456,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3020",
@@ -2111,7 +2469,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3050",
@@ -2122,7 +2482,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3052",
@@ -2133,7 +2495,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3074",
@@ -2144,7 +2508,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3101",
@@ -2155,7 +2521,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3128",
@@ -2166,7 +2534,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3225",
@@ -2177,7 +2547,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3233",
@@ -2188,7 +2560,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3260",
@@ -2199,7 +2573,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3268",
@@ -2210,7 +2586,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3269",
@@ -2221,7 +2599,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3283",
@@ -2239,7 +2619,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3290",
@@ -2250,7 +2632,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3305",
@@ -2261,7 +2645,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3306",
@@ -2272,7 +2658,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3323",
@@ -2283,7 +2671,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3332",
@@ -2294,7 +2684,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3333",
@@ -2319,7 +2711,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3351",
@@ -2330,7 +2724,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3386",
@@ -2341,7 +2737,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3389",
@@ -2352,7 +2750,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3396",
@@ -2363,7 +2763,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3412",
@@ -2374,7 +2776,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3423",
@@ -2385,7 +2789,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3424",
@@ -2396,7 +2802,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3455",
@@ -2407,7 +2815,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3478",
@@ -2432,7 +2842,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3479",
@@ -2443,7 +2855,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3480",
@@ -2454,7 +2868,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3483",
@@ -2472,7 +2888,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3493",
@@ -2483,7 +2901,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3516",
@@ -2494,7 +2914,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3527",
@@ -2505,7 +2927,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3535",
@@ -2516,7 +2940,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3544",
@@ -2527,7 +2953,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3632",
@@ -2538,7 +2966,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3645",
@@ -2549,7 +2979,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3659",
@@ -2567,7 +2999,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3667",
@@ -2578,7 +3012,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3689",
@@ -2589,7 +3025,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3690",
@@ -2600,7 +3038,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3702",
@@ -2611,7 +3051,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3724",
@@ -2629,7 +3071,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3725",
@@ -2640,7 +3084,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3749",
@@ -2651,7 +3097,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3768",
@@ -2662,7 +3110,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3784",
@@ -2673,7 +3123,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3785",
@@ -2684,7 +3136,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3799",
@@ -2695,7 +3149,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3804",
@@ -2706,7 +3162,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3825",
@@ -2717,7 +3175,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3826",
@@ -2735,7 +3195,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3835",
@@ -2746,7 +3208,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3830",
@@ -2757,7 +3221,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3856",
@@ -2768,7 +3234,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3880",
@@ -2779,7 +3247,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3868",
@@ -2790,7 +3260,9 @@ IANA Status - Official
 TCP         - Yes, and SCTP
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3872",
@@ -2801,7 +3273,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3900",
@@ -2812,7 +3286,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3960",
@@ -2823,7 +3299,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3962",
@@ -2834,7 +3312,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3978",
@@ -2845,7 +3325,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3979",
@@ -2856,7 +3338,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "3999",
@@ -2867,7 +3351,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4000",
@@ -2878,7 +3364,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4001",
@@ -2896,7 +3384,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4018",
@@ -2907,7 +3397,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4035",
@@ -2918,7 +3410,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4045",
@@ -2929,7 +3423,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4050",
@@ -2940,7 +3436,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4069",
@@ -2951,7 +3449,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4070",
@@ -2962,7 +3462,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4089",
@@ -2973,7 +3475,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4090",
@@ -2984,7 +3488,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4093",
@@ -2995,7 +3501,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4096",
@@ -3006,7 +3514,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4105",
@@ -3017,7 +3527,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4111",
@@ -3028,7 +3540,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4116",
@@ -3039,7 +3553,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4125",
@@ -3050,7 +3566,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4172",
@@ -3061,7 +3579,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4190",
@@ -3072,7 +3592,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4198",
@@ -3083,7 +3605,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4201",
@@ -3094,7 +3618,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4222",
@@ -3105,7 +3631,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4226",
@@ -3116,7 +3644,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4242",
@@ -3134,7 +3664,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4243",
@@ -3152,7 +3684,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4244",
@@ -3163,7 +3697,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4303",
@@ -3174,7 +3710,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4307",
@@ -3185,7 +3723,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4321",
@@ -3196,7 +3736,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4444",
@@ -3221,7 +3763,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4444–4445",
@@ -3232,7 +3776,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4486",
@@ -3243,7 +3789,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4488",
@@ -3254,7 +3802,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4500",
@@ -3265,7 +3815,9 @@ IANA Status - Official
 TCP         - Assigned
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4502–4534",
@@ -3276,7 +3828,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4505–4506",
@@ -3287,7 +3841,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4534",
@@ -3298,7 +3854,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4560",
@@ -3309,7 +3867,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4567",
@@ -3320,7 +3880,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4569",
@@ -3331,7 +3893,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4604",
@@ -3342,7 +3906,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4605",
@@ -3353,7 +3919,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4610–4640",
@@ -3364,7 +3932,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4662",
@@ -3382,7 +3952,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4664",
@@ -3393,7 +3965,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4672",
@@ -3404,7 +3978,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4711",
@@ -3415,7 +3991,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4713",
@@ -3426,7 +4004,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4728",
@@ -3437,7 +4017,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4730",
@@ -3448,7 +4030,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4739",
@@ -3459,7 +4043,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4747",
@@ -3470,7 +4056,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4753",
@@ -3481,7 +4069,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4789",
@@ -3492,7 +4082,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4791",
@@ -3503,7 +4095,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4840",
@@ -3514,7 +4108,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4843",
@@ -3525,7 +4121,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4847",
@@ -3536,7 +4134,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4848",
@@ -3547,7 +4147,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4894",
@@ -3558,7 +4160,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4944",
@@ -3569,7 +4173,9 @@ IANA Status - Unofficial
 TCP         - No
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4949",
@@ -3580,7 +4186,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "4950",
@@ -3591,7 +4199,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5000",
@@ -3672,7 +4282,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5000–5500",
@@ -3683,7 +4295,9 @@ IANA Status - Unofficial
 TCP         - No
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5001",
@@ -3715,7 +4329,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5002",
@@ -3726,7 +4342,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5003",
@@ -3737,7 +4355,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5004",
@@ -3748,7 +4368,9 @@ IANA Status - Official
 TCP         - Yes, and DCCP
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5005",
@@ -3759,7 +4381,9 @@ IANA Status - Official
 TCP         - Yes, and DCCP
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5007",
@@ -3770,7 +4394,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5010",
@@ -3782,7 +4408,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5011",
@@ -3793,7 +4421,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5025",
@@ -3804,7 +4434,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5029",
@@ -3815,7 +4447,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5031",
@@ -3826,7 +4460,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5037",
@@ -3837,7 +4473,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5044",
@@ -3848,7 +4486,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5048",
@@ -3859,7 +4499,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5050",
@@ -3870,7 +4512,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5051",
@@ -3881,7 +4525,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5060",
@@ -3892,7 +4538,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5061",
@@ -3903,7 +4551,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5062",
@@ -3914,7 +4564,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5064",
@@ -3925,7 +4577,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5065",
@@ -3936,7 +4590,9 @@ IANA Status - Official
 TCP         - Assigned
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5070",
@@ -3947,7 +4603,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5084",
@@ -3958,7 +4616,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5085",
@@ -3969,7 +4629,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5090",
@@ -3980,7 +4642,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5093",
@@ -3991,7 +4655,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5099",
@@ -4002,7 +4668,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5104",
@@ -4013,7 +4681,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5121",
@@ -4024,7 +4694,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5124",
@@ -4035,7 +4707,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5125",
@@ -4046,7 +4720,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5150",
@@ -4057,7 +4733,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5151",
@@ -4075,7 +4753,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5154",
@@ -4086,7 +4766,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5172",
@@ -4097,7 +4779,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5190",
@@ -4108,7 +4792,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5198",
@@ -4119,7 +4805,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5199",
@@ -4130,7 +4818,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5200",
@@ -4141,7 +4831,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5201",
@@ -4152,7 +4844,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5222",
@@ -4163,7 +4857,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Reserved
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5223",
@@ -4181,7 +4877,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5228",
@@ -4199,7 +4897,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5242",
@@ -4210,7 +4910,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5243",
@@ -4221,7 +4923,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5246",
@@ -4232,7 +4936,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5247",
@@ -4243,7 +4949,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5269",
@@ -4254,7 +4962,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5280",
@@ -4265,7 +4975,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5281",
@@ -4276,7 +4988,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5298",
@@ -4287,7 +5001,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5310",
@@ -4298,7 +5014,9 @@ IANA Status - Official
 TCP         - Assigned
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5318",
@@ -4309,7 +5027,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Reserved
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5349",
@@ -4334,7 +5054,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Reserved
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5351",
@@ -4345,7 +5067,9 @@ IANA Status - Official
 TCP         - Reserved
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5353",
@@ -4356,7 +5080,9 @@ IANA Status - Official
 TCP         - Assigned
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5355",
@@ -4367,7 +5093,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5357",
@@ -4378,7 +5106,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5358",
@@ -4389,7 +5119,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5394",
@@ -4400,7 +5132,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5402",
@@ -4411,7 +5145,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5405",
@@ -4422,7 +5158,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5412",
@@ -4433,7 +5171,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5413",
@@ -4444,7 +5184,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5417",
@@ -4455,7 +5197,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5421",
@@ -4466,7 +5210,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5432",
@@ -4477,7 +5223,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5433",
@@ -4488,7 +5236,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5445",
@@ -4499,7 +5249,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5480",
@@ -4510,7 +5262,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5481",
@@ -4521,7 +5275,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5495",
@@ -4532,7 +5288,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5498",
@@ -4543,7 +5301,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5499",
@@ -4554,7 +5314,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5500",
@@ -4572,7 +5334,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5501",
@@ -4583,7 +5347,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5517",
@@ -4594,7 +5360,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5550",
@@ -4605,7 +5373,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5554",
@@ -4616,7 +5386,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5555",
@@ -4634,7 +5406,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5556",
@@ -4645,7 +5419,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5568",
@@ -4656,7 +5432,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5601",
@@ -4667,7 +5445,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5631",
@@ -4678,7 +5458,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5632",
@@ -4689,7 +5471,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5656",
@@ -4700,7 +5484,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5666",
@@ -4711,7 +5497,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5667",
@@ -4722,7 +5510,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5670",
@@ -4740,7 +5530,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5671",
@@ -4751,7 +5543,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5672",
@@ -4762,7 +5556,9 @@ IANA Status - Official
 TCP         - Yes, and SCTP
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5683",
@@ -4773,7 +5569,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5684",
@@ -4784,7 +5582,9 @@ IANA Status - Official
 TCP         - Yes/No
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5693",
@@ -4795,7 +5595,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5701",
@@ -4806,7 +5608,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5722",
@@ -4817,7 +5621,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5718",
@@ -4828,7 +5634,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5719",
@@ -4839,7 +5647,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5723",
@@ -4850,7 +5660,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5724",
@@ -4861,7 +5673,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5741",
@@ -4872,7 +5686,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5742",
@@ -4883,7 +5699,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5800",
@@ -4901,7 +5719,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5900",
@@ -4919,7 +5739,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5931",
@@ -4930,7 +5752,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5938",
@@ -4941,7 +5765,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5984",
@@ -4952,7 +5778,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5985",
@@ -4963,7 +5791,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5986",
@@ -4974,7 +5804,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "5988–5989",
@@ -4985,7 +5817,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6000–6063",
@@ -4996,7 +5830,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6005",
@@ -5014,7 +5850,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6009",
@@ -5025,7 +5863,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6050",
@@ -5036,7 +5876,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6051",
@@ -5047,7 +5889,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6086",
@@ -5058,7 +5902,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6100",
@@ -5076,7 +5922,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6101",
@@ -5087,7 +5935,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6110",
@@ -5098,7 +5948,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6111",
@@ -5109,7 +5961,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6112",
@@ -5134,7 +5988,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6113",
@@ -5145,7 +6001,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6136",
@@ -5156,7 +6014,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6159",
@@ -5167,7 +6027,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6200",
@@ -5178,7 +6040,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6201",
@@ -5189,7 +6053,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6225",
@@ -5200,7 +6066,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6227",
@@ -5211,7 +6079,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6240",
@@ -5222,7 +6092,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6244",
@@ -5233,7 +6105,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6255",
@@ -5244,7 +6118,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6257",
@@ -5255,7 +6131,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6260",
@@ -5266,7 +6144,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6262",
@@ -5277,7 +6157,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6343",
@@ -5288,7 +6170,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6346",
@@ -5299,7 +6183,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6347",
@@ -5310,7 +6196,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6350",
@@ -5321,7 +6209,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6379",
@@ -5332,7 +6222,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6389",
@@ -5343,7 +6235,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6432",
@@ -5354,7 +6248,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6436",
@@ -5365,7 +6261,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6437",
@@ -5376,7 +6274,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6444",
@@ -5387,7 +6287,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6445",
@@ -5398,7 +6300,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6463–6472",
@@ -5409,7 +6313,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6464",
@@ -5420,7 +6326,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6502",
@@ -5431,7 +6339,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6513",
@@ -5442,7 +6352,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6514",
@@ -5453,7 +6365,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6515",
@@ -5464,7 +6378,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6516",
@@ -5475,7 +6391,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6543",
@@ -5486,7 +6404,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6556",
@@ -5497,7 +6417,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6566",
@@ -5508,7 +6430,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6560–6561",
@@ -5519,7 +6443,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6571",
@@ -5530,7 +6456,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6600",
@@ -5548,7 +6476,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6601",
@@ -5559,7 +6489,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6602",
@@ -5570,7 +6502,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6619",
@@ -5581,7 +6515,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6622",
@@ -5592,7 +6528,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6653",
@@ -5603,7 +6541,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6660–6664",
@@ -5614,7 +6554,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6665–6669",
@@ -5625,7 +6567,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6679",
@@ -5643,7 +6587,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6690",
@@ -5654,7 +6600,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6697",
@@ -5665,7 +6613,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6699",
@@ -5676,7 +6626,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6715",
@@ -5687,7 +6639,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6771",
@@ -5698,7 +6652,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6783–6785",
@@ -5709,7 +6665,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6881–6887",
@@ -5720,7 +6678,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6888",
@@ -5738,7 +6698,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6889–6890",
@@ -5749,7 +6711,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6891–6900",
@@ -5760,7 +6724,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6891–6900",
@@ -5771,7 +6737,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6901",
@@ -5789,7 +6757,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6902–6968",
@@ -5800,7 +6770,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6969",
@@ -5818,7 +6790,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "6970–6999",
@@ -5836,7 +6810,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7000",
@@ -5854,7 +6830,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7001",
@@ -5872,7 +6850,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7002",
@@ -5883,7 +6863,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7005",
@@ -5894,7 +6876,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7006",
@@ -5905,7 +6889,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7010",
@@ -5916,7 +6902,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7022",
@@ -5927,7 +6915,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7023",
@@ -5938,7 +6928,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7025",
@@ -5949,7 +6941,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7047",
@@ -5960,7 +6954,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7070",
@@ -5971,7 +6967,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes/No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7133",
@@ -5982,7 +6980,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7144",
@@ -5993,7 +6993,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7145",
@@ -6004,7 +7006,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7171",
@@ -6015,7 +7019,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7262",
@@ -6026,7 +7032,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7272",
@@ -6037,7 +7045,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7306",
@@ -6048,7 +7058,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7307",
@@ -6059,7 +7071,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7312",
@@ -6070,7 +7084,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7396",
@@ -6081,7 +7097,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7400",
@@ -6092,7 +7110,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7401",
@@ -6103,7 +7123,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7402",
@@ -6114,7 +7136,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7471",
@@ -6125,7 +7149,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7473",
@@ -6136,7 +7162,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7474",
@@ -6147,7 +7175,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7478",
@@ -6158,7 +7188,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7542",
@@ -6169,7 +7201,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7547",
@@ -6180,7 +7214,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7575",
@@ -6191,7 +7227,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7624",
@@ -6202,7 +7240,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7631",
@@ -6213,7 +7253,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7634",
@@ -6224,7 +7266,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7652–7654",
@@ -6235,7 +7279,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7655",
@@ -6246,7 +7292,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7656–7660",
@@ -6257,7 +7305,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7670",
@@ -6268,7 +7318,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7680",
@@ -6279,7 +7331,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7687",
@@ -6290,7 +7344,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7707–7708",
@@ -6301,7 +7357,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7717",
@@ -6312,7 +7370,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7777",
@@ -6365,7 +7425,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7777–7788",
@@ -6376,7 +7438,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7831",
@@ -6387,7 +7451,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7880",
@@ -6398,7 +7464,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7890",
@@ -6409,7 +7477,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7915",
@@ -6420,7 +7490,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7935",
@@ -6431,7 +7503,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7946",
@@ -6442,7 +7516,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "7990",
@@ -6453,7 +7529,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8000",
@@ -6478,7 +7556,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8005",
@@ -6489,7 +7569,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8006",
@@ -6507,7 +7589,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8007",
@@ -6518,7 +7602,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8008",
@@ -6550,7 +7636,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8009",
@@ -6561,7 +7649,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8010",
@@ -6572,7 +7662,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8042",
@@ -6583,7 +7675,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8069",
@@ -6594,7 +7688,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8070",
@@ -6605,7 +7701,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8074",
@@ -6616,7 +7714,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8075",
@@ -6627,7 +7727,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8080",
@@ -6652,7 +7754,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8088",
@@ -6663,7 +7767,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8089",
@@ -6681,7 +7787,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8090",
@@ -6706,7 +7814,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8091",
@@ -6717,7 +7827,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8092",
@@ -6728,7 +7840,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8111",
@@ -6739,7 +7853,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8112",
@@ -6750,7 +7866,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8116",
@@ -6761,7 +7879,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8118",
@@ -6772,7 +7892,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8123",
@@ -6783,7 +7905,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8139",
@@ -6794,7 +7918,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8140",
@@ -6805,7 +7931,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8172",
@@ -6816,7 +7944,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8184",
@@ -6827,7 +7957,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8194–8195",
@@ -6838,7 +7970,9 @@ IANA Status - Official
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8200",
@@ -6856,7 +7990,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8222",
@@ -6867,7 +8003,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8243",
@@ -6878,7 +8016,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8245",
@@ -6889,7 +8029,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8280",
@@ -6900,7 +8042,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8281",
@@ -6911,7 +8055,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8291",
@@ -6922,7 +8068,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8303",
@@ -6933,7 +8081,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8332",
@@ -6944,7 +8094,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8333",
@@ -6962,7 +8114,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8337",
@@ -6973,7 +8127,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8384",
@@ -6984,7 +8140,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8388",
@@ -6995,7 +8153,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8443",
@@ -7034,7 +8194,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8444",
@@ -7045,7 +8207,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8448",
@@ -7056,7 +8220,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8484",
@@ -7067,7 +8233,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8500",
@@ -7078,7 +8246,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8530",
@@ -7089,7 +8259,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8531",
@@ -7100,7 +8272,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8580",
@@ -7111,7 +8285,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8629",
@@ -7122,7 +8298,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8642",
@@ -7133,7 +8311,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8691",
@@ -7144,7 +8324,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8765",
@@ -7155,7 +8337,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8767",
@@ -7166,7 +8350,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8834",
@@ -7177,7 +8363,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8840",
@@ -7188,7 +8376,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8880",
@@ -7206,7 +8396,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8883",
@@ -7217,7 +8409,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8887",
@@ -7228,7 +8422,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8888",
@@ -7260,7 +8456,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8889",
@@ -7271,7 +8469,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8983",
@@ -7282,7 +8482,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8997",
@@ -7293,7 +8495,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8998",
@@ -7304,7 +8508,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "8999",
@@ -7315,7 +8521,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9000",
@@ -7375,7 +8583,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9001",
@@ -7421,7 +8631,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9002",
@@ -7432,7 +8644,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9006",
@@ -7450,7 +8664,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9030",
@@ -7461,7 +8677,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9042",
@@ -7472,7 +8690,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9043",
@@ -7483,7 +8703,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9050–9051",
@@ -7494,7 +8716,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9060",
@@ -7505,7 +8729,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9080",
@@ -7537,7 +8763,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9090",
@@ -7569,7 +8797,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9091",
@@ -7587,7 +8817,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9092",
@@ -7605,7 +8837,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9100",
@@ -7616,7 +8850,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9101",
@@ -7627,7 +8863,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9102",
@@ -7638,7 +8876,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9103",
@@ -7649,7 +8889,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9119",
@@ -7660,7 +8902,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9150",
@@ -7671,7 +8915,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9191",
@@ -7682,7 +8928,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9199",
@@ -7693,7 +8941,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9200",
@@ -7704,7 +8954,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9217",
@@ -7715,7 +8967,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9293",
@@ -7726,7 +8980,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9300",
@@ -7737,7 +8993,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9303",
@@ -7748,7 +9006,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9306",
@@ -7759,7 +9019,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9309",
@@ -7770,7 +9032,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9312",
@@ -7781,7 +9045,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9332",
@@ -7792,7 +9058,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9333",
@@ -7803,7 +9071,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9339",
@@ -7814,7 +9084,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9389",
@@ -7825,7 +9097,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9392",
@@ -7836,7 +9110,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9418",
@@ -7847,7 +9123,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9419",
@@ -7858,7 +9136,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9420",
@@ -7869,7 +9149,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9421",
@@ -7880,7 +9162,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9422",
@@ -7891,7 +9175,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9425",
@@ -7902,7 +9188,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9443",
@@ -7920,7 +9208,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9535",
@@ -7931,7 +9221,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9536",
@@ -7942,7 +9234,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9600",
@@ -7953,7 +9247,9 @@ IANA Status - Unofficial
 TCP         - No
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9675",
@@ -7964,7 +9260,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9676",
@@ -7975,7 +9273,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9695",
@@ -7986,7 +9286,9 @@ IANA Status - Official
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9785",
@@ -7997,7 +9299,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9800",
@@ -8015,7 +9319,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9875",
@@ -8026,7 +9332,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9898",
@@ -8037,7 +9345,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9899",
@@ -8048,7 +9358,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9901",
@@ -8059,7 +9371,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9981",
@@ -8070,7 +9384,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9982",
@@ -8081,7 +9397,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9987",
@@ -8092,7 +9410,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9993",
@@ -8103,7 +9423,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9997",
@@ -8114,7 +9436,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "9999",
@@ -8125,7 +9449,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10000",
@@ -8150,7 +9476,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10000–20000",
@@ -8161,7 +9489,9 @@ IANA Status - Unofficial
 TCP         - No
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10001",
@@ -8172,7 +9502,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10009",
@@ -8183,7 +9515,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10011",
@@ -8194,7 +9528,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10024",
@@ -8205,7 +9541,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10025",
@@ -8216,7 +9554,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10042",
@@ -8227,7 +9567,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10050",
@@ -8238,7 +9580,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10051",
@@ -8249,7 +9593,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10110",
@@ -8260,7 +9606,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10172",
@@ -8271,7 +9619,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10200",
@@ -8289,7 +9639,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10201–10204",
@@ -8300,7 +9652,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10212",
@@ -8311,7 +9665,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10308",
@@ -8322,7 +9678,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10480",
@@ -8333,7 +9691,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10505",
@@ -8344,7 +9704,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10514",
@@ -8355,7 +9717,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10800",
@@ -8366,7 +9730,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10823",
@@ -8377,7 +9743,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10891",
@@ -8388,7 +9756,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "10933",
@@ -8399,7 +9769,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "11001",
@@ -8410,7 +9782,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "11111",
@@ -8421,7 +9795,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "11112",
@@ -8432,7 +9808,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "11211",
@@ -8443,7 +9821,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "11214",
@@ -8454,7 +9834,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "11215",
@@ -8465,7 +9847,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "11235",
@@ -8476,7 +9860,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "11311",
@@ -8487,7 +9873,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "11371",
@@ -8498,7 +9886,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "11753",
@@ -8509,7 +9899,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12000",
@@ -8520,7 +9912,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12012",
@@ -8531,7 +9925,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12013",
@@ -8542,7 +9938,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12035",
@@ -8553,7 +9951,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12043",
@@ -8564,7 +9964,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12046",
@@ -8575,7 +9977,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12201",
@@ -8586,7 +9990,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12222",
@@ -8597,7 +10003,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12223",
@@ -8608,7 +10016,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12345",
@@ -8633,7 +10043,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12443",
@@ -8644,7 +10056,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12489",
@@ -8655,7 +10069,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "12975",
@@ -8666,7 +10082,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "13000–13050",
@@ -8677,7 +10095,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "13008",
@@ -8688,7 +10108,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "13075",
@@ -8699,7 +10121,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "13400",
@@ -8710,7 +10134,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "13720",
@@ -8721,7 +10147,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "13721",
@@ -8732,7 +10160,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "13724",
@@ -8743,7 +10173,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "13782",
@@ -8754,7 +10186,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "13783",
@@ -8765,7 +10199,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "13785",
@@ -8776,7 +10212,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "13786",
@@ -8787,7 +10225,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "14550",
@@ -8798,7 +10238,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "14567",
@@ -8809,7 +10251,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "14800",
@@ -8820,7 +10264,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "15000",
@@ -8852,7 +10298,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "15009",
@@ -8863,7 +10311,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "15010",
@@ -8874,7 +10324,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "15441",
@@ -8885,7 +10337,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "15567",
@@ -8896,7 +10350,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "15345",
@@ -8907,7 +10363,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "15672",
@@ -8918,7 +10376,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16000",
@@ -8936,7 +10396,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16080",
@@ -8947,7 +10409,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16200",
@@ -8958,7 +10422,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16225",
@@ -8969,7 +10435,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16250",
@@ -8980,7 +10448,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16261",
@@ -8991,7 +10461,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16300",
@@ -9002,7 +10474,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16384",
@@ -9013,7 +10487,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16384-16403",
@@ -9024,7 +10500,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16384-16387",
@@ -9035,7 +10513,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16393-16402",
@@ -9046,7 +10526,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16403-16472",
@@ -9057,7 +10539,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16400",
@@ -9068,7 +10552,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16482",
@@ -9079,7 +10565,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "16567",
@@ -9090,7 +10578,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "17011",
@@ -9101,7 +10591,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "17224",
@@ -9112,7 +10604,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "17225",
@@ -9123,7 +10617,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "17333",
@@ -9134,7 +10630,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "17475",
@@ -9145,7 +10643,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "17500",
@@ -9156,7 +10656,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18080",
@@ -9167,7 +10669,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18081",
@@ -9178,7 +10682,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18091",
@@ -9189,7 +10695,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18092",
@@ -9200,7 +10708,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18104",
@@ -9211,7 +10721,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18200",
@@ -9222,7 +10734,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18201",
@@ -9233,7 +10747,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18206",
@@ -9244,7 +10760,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18300",
@@ -9255,7 +10773,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18301",
@@ -9266,7 +10786,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18306",
@@ -9277,7 +10799,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18333",
@@ -9288,7 +10812,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18400",
@@ -9299,7 +10825,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18401",
@@ -9310,7 +10838,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18505",
@@ -9321,7 +10851,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18506",
@@ -9332,7 +10864,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18605",
@@ -9343,7 +10877,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18606",
@@ -9354,7 +10890,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "18676",
@@ -9365,7 +10903,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19000",
@@ -9383,7 +10923,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19001",
@@ -9394,7 +10936,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19132",
@@ -9405,7 +10949,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19133",
@@ -9416,7 +10962,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19150",
@@ -9427,7 +10975,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19226",
@@ -9438,7 +10988,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19294",
@@ -9449,7 +11001,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19295",
@@ -9460,7 +11014,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19302",
@@ -9471,7 +11027,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19531",
@@ -9482,7 +11040,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19532",
@@ -9493,7 +11053,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19812",
@@ -9504,7 +11066,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19813",
@@ -9515,7 +11079,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19814",
@@ -9526,7 +11092,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "19999",
@@ -9537,7 +11105,9 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "20000",
@@ -9562,7 +11132,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "20560",
@@ -9573,7 +11145,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "20582",
@@ -9584,7 +11158,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "20583",
@@ -9595,7 +11171,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "20595",
@@ -9606,7 +11184,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "20808",
@@ -9617,7 +11197,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "21025",
@@ -9628,7 +11210,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "22000",
@@ -9639,7 +11223,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "22136",
@@ -9650,7 +11236,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "22222",
@@ -9661,7 +11249,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "23073",
@@ -9672,7 +11262,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "23399",
@@ -9683,7 +11275,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "23513",
@@ -9694,7 +11288,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "24441",
@@ -9705,7 +11301,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "24444",
@@ -9716,7 +11314,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "24465",
@@ -9727,7 +11327,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "24554",
@@ -9738,7 +11340,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "24800",
@@ -9749,7 +11353,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "24842",
@@ -9760,7 +11366,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "25565",
@@ -9778,7 +11386,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "25575",
@@ -9789,7 +11399,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "25826",
@@ -9800,7 +11412,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "26000",
@@ -9825,7 +11439,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "26900–26901",
@@ -9836,7 +11452,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "26909-26911",
@@ -9847,7 +11465,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27000",
@@ -9858,7 +11478,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27000–27006",
@@ -9869,7 +11491,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27000–27009",
@@ -9880,7 +11504,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27000–27015",
@@ -9891,7 +11517,9 @@ IANA Status - Unofficial
 TCP         - No
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27015",
@@ -9902,7 +11530,9 @@ IANA Status - Unofficial
 TCP         - No
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27015-27018",
@@ -9913,7 +11543,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27015–27030",
@@ -9931,7 +11563,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27016",
@@ -9942,7 +11576,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27017",
@@ -9953,7 +11589,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27031",
@@ -9964,7 +11602,9 @@ IANA Status - Unofficial
 TCP         - Ports 27036 & 27037
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27036",
@@ -9975,7 +11615,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27037",
@@ -9986,7 +11628,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Ports 27031 & 27036
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27374",
@@ -9997,7 +11641,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27500–27900",
@@ -10008,7 +11654,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27888",
@@ -10019,7 +11667,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27901–27910",
@@ -10030,7 +11680,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27950",
@@ -10041,7 +11693,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "27960–27969",
@@ -10052,7 +11706,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "28001",
@@ -10063,7 +11719,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "28015",
@@ -10074,7 +11732,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "28016",
@@ -10085,7 +11745,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "28770–28771",
@@ -10096,7 +11758,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "28785–28786",
@@ -10107,7 +11771,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "28852",
@@ -10118,7 +11784,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "28910",
@@ -10129,7 +11797,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "28960",
@@ -10140,7 +11810,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "29000",
@@ -10151,7 +11823,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "29070",
@@ -10162,7 +11836,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "29900–29901",
@@ -10173,7 +11849,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "29920",
@@ -10184,7 +11862,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "30000",
@@ -10195,7 +11875,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "30033",
@@ -10206,7 +11888,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "30564",
@@ -10217,7 +11901,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "31337",
@@ -10228,7 +11914,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "31416",
@@ -10239,7 +11927,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "31438",
@@ -10250,7 +11940,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "31457",
@@ -10261,7 +11953,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "32137",
@@ -10272,7 +11966,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "32400",
@@ -10283,7 +11979,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "32764",
@@ -10294,7 +11992,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "32887",
@@ -10305,7 +12005,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "32976",
@@ -10316,7 +12018,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "33434",
@@ -10327,7 +12031,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "33848",
@@ -10338,7 +12044,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "34000",
@@ -10349,7 +12057,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "34197",
@@ -10360,7 +12070,9 @@ IANA Status - Unofficial
 TCP         - No
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "35357",
@@ -10371,7 +12083,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "37008",
@@ -10382,7 +12096,9 @@ IANA Status - Unofficial
 TCP         - Unspecified
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "40000",
@@ -10393,7 +12109,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "41121",
@@ -10404,7 +12122,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "41794",
@@ -10415,7 +12135,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "41795",
@@ -10426,7 +12148,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "41796",
@@ -10437,7 +12161,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "41797",
@@ -10448,7 +12174,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - No
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "43110",
@@ -10459,7 +12187,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "43594–43595",
@@ -10470,7 +12200,9 @@ IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "44405",
@@ -10481,7 +12213,9 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "44818",
@@ -10492,7 +12226,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "47808–47823",
@@ -10503,7 +12239,9 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
 		Name: "49151",
@@ -10514,6 +12252,8 @@ IANA Status - Official
 TCP         - Reserved
 UDP         - Reserved
 
-`,
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 }
