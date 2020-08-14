@@ -9,9 +9,6 @@ import (
 
 func TestReferences_ByName(t *testing.T) {
 	Statuses = append(Statuses, Reference{Name: "501-extended"})
-	type args struct {
-		code string
-	}
 	tests := []struct {
 		name string
 		want int
@@ -32,9 +29,6 @@ func TestReferences_ByName(t *testing.T) {
 }
 
 func TestReferences_InRange(t *testing.T) {
-	type args struct {
-		code string
-	}
 	tests := []string{
 		"19150",
 		"16406",
