@@ -1,6 +1,7 @@
 package httpref
 
 import (
+	"regexp"
 	"strings"
 	"testing"
 
@@ -85,4 +86,14 @@ func TestReference_DescribeLimitsLength(t *testing.T) {
 func TestReferences_Titles(t *testing.T) {
 	n := Statuses.Titles()
 	assert.Equal(t, 5, len(n))
+}
+
+func TestPortsConsistencyValidation(t *testing.T) {
+	ports := append(WellKnownPorts[1:], RegisteredPorts[1:]...)
+	var validRange = regexp.MustCompile(`^\d+(-\d+)?$`)
+	for _, port := range ports {
+		if !validRange.MatchString(port.Name) {
+			t.Errorf("Invalid port format: %v", port.Name)
+		}
+	}
 }
