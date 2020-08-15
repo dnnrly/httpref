@@ -822,7 +822,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "1560–1590",
+		Name: "1560-1590",
 		Description: `
 "1C:Enterprise cluster working processes"
 
@@ -855,7 +855,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "1582–1583",
+		Name: "1582-1583",
 		Description: `
 "IBM Tivoli Storage Manager server web interface"
 
@@ -1736,7 +1736,7 @@ UDP         - ?
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "2222–2226",
+		Name: "2222-2226",
 		Description: `
 "ESET Remote administrator"
 
@@ -2173,7 +2173,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "2546–2548",
+		Name: "2546-2548",
 		Description: `
 "EVault (https://en.wikipedia.org/wiki/EVault) data protection services"
 
@@ -3768,7 +3768,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "4444–4445",
+		Name: "4444-4445",
 		Description: `
 "I2P (https://en.wikipedia.org/wiki/I2P) HTTP/S proxy"
 
@@ -3820,7 +3820,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "4502–4534",
+		Name: "4502-4534",
 		Description: `
 Microsoft Silverlight connectable ports under non-elevated trust
 
@@ -3833,7 +3833,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "4505–4506",
+		Name: "4505-4506",
 		Description: `
 "Salt (https://en.wikipedia.org/wiki/Salt_(software)) master"
 
@@ -3924,7 +3924,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "4610–4640",
+		Name: "4610-4640",
 		Description: `
 "QualiSystems (https://en.wikipedia.org/wiki/QualiSystems) TestShell Suite Services"
 
@@ -4287,7 +4287,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "5000–5500",
+		Name: "5000-5500",
 		Description: `
 "League of Legends (https://en.wikipedia.org/wiki/League_of_Legends), a multiplayer online battle arena (https://en.wikipedia.org/wiki/Multiplayer_online_battle_arena) video game"
 
@@ -5809,7 +5809,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "5988–5989",
+		Name: "5988-5989",
 		Description: `
 "CIM (https://en.wikipedia.org/wiki/Common_Information_Model_(computing))-XML (DMTF Protocol)"
 
@@ -5822,7 +5822,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "6000–6063",
+		Name: "6000-6063",
 		Description: `
 "X11 (https://en.wikipedia.org/wiki/X_Window_System)—used between an X client and server over the network"
 
@@ -6305,7 +6305,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "6463–6472",
+		Name: "6463-6472",
 		Description: `
 "Discord (https://en.wikipedia.org/wiki/Discord_(software)) RPC"
 
@@ -6435,7 +6435,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "6560–6561",
+		Name: "6560-6561",
 		Description: `
 "Speech-Dispatcher (/w/index.php?title=Speech-Dispatcher&action=edit&redlink=1) daemon"
 
@@ -6546,7 +6546,7 @@ UDP         - Assigned
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "6660–6664",
+		Name: "6660-6664",
 		Description: `
 "Internet Relay Chat (https://en.wikipedia.org/wiki/Internet_Relay_Chat) (IRC)"
 
@@ -6559,7 +6559,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "6665–6669",
+		Name: "6665-6669",
 		Description: `
 "Internet Relay Chat (https://en.wikipedia.org/wiki/Internet_Relay_Chat) (IRC)"
 
@@ -6657,7 +6657,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "6783–6785",
+		Name: "6783-6785",
 		Description: `
 "Splashtop Remote (https://en.wikipedia.org/wiki/Splashtop_Remote) server broadcast"
 
@@ -6670,7 +6670,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "6881–6887",
+		Name: "6881-6887",
 		Description: `
 "BitTorrent (https://en.wikipedia.org/wiki/BitTorrent_(protocol)) part of full range of ports used most often"
 
@@ -6703,7 +6703,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "6889–6890",
+		Name: "6889-6890",
 		Description: `
 BitTorrent part of full range of ports used most often
 
@@ -6716,7 +6716,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "6891–6900",
+		Name: "6891-6900",
 		Description: `
 BitTorrent part of full range of ports used most often
 
@@ -6729,7 +6729,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "6891–6900",
+		Name: "6891-6900",
 		Description: `
 "Windows Live Messenger (https://en.wikipedia.org/wiki/Windows_Live_Messenger) (File transfer)"
 
@@ -6762,7 +6762,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "6902–6968",
+		Name: "6902-6968",
 		Description: `
 BitTorrent part of full range of ports used most often
 
@@ -6795,7 +6795,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "6970–6999",
+		Name: "6970-6999",
 		Description: `
 BitTorrent part of full range of ports used most often
 
@@ -7271,7 +7271,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "7652–7654",
+		Name: "7652-7654",
 		Description: `
 "I2P (https://en.wikipedia.org/wiki/I2P) anonymizing overlay network"
 
@@ -7297,7 +7297,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "7656–7660",
+		Name: "7656-7660",
 		Description: `
 I2P anonymizing overlay network
 
@@ -7349,7 +7349,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "7707–7708",
+		Name: "7707-7708",
 		Description: `
 "Killing Floor (https://en.wikipedia.org/wiki/Killing_Floor_(2009_video_game))"
 
@@ -7430,7 +7430,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "7777–7788",
+		Name: "7777-7788",
 		Description: `
 "Unreal Tournament series default server"
 
@@ -7962,7 +7962,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "8194–8195",
+		Name: "8194-8195",
 		Description: `
 "Bloomberg Terminal (https://en.wikipedia.org/wiki/Bloomberg_Terminal)"
 
@@ -8708,7 +8708,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "9050–9051",
+		Name: "9050-9051",
 		Description: `
 "Tor (https://en.wikipedia.org/wiki/Tor_(anonymity_network)) (SOCKS-5 proxy client)"
 
@@ -9481,7 +9481,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "10000–20000",
+		Name: "10000-20000",
 		Description: `
 "Used on VoIP (https://en.wikipedia.org/wiki/Voice_over_IP) networks for receiving and transmitting voice telephony traffic which includes Google Voice (https://en.wikipedia.org/wiki/Google_Voice) via the OBiTalk (https://en.wikipedia.org/wiki/Obihai_Technology) ATA (https://en.wikipedia.org/wiki/Analog_telephone_adapter) devices as well as on the MagicJack (https://en.wikipedia.org/wiki/MagicJack) and Vonage (https://en.wikipedia.org/wiki/Vonage) ATA network devices."
 
@@ -9644,7 +9644,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "10201–10204",
+		Name: "10201-10204",
 		Description: `
 "FRISK Software International's f-protd virus scanning daemon for Unix platforms"
 
@@ -10087,7 +10087,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "13000–13050",
+		Name: "13000-13050",
 		Description: `
 "Second Life (https://en.wikipedia.org/wiki/Second_Life), used for server UDP in-bound"
 
@@ -11444,7 +11444,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "26900–26901",
+		Name: "26900-26901",
 		Description: `
 EVE Online
 
@@ -11483,7 +11483,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "27000–27006",
+		Name: "27000-27006",
 		Description: `
 "id Software (https://en.wikipedia.org/wiki/Id_Software)'s QuakeWorld (https://en.wikipedia.org/wiki/QuakeWorld) master server"
 
@@ -11496,7 +11496,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "27000–27009",
+		Name: "27000-27009",
 		Description: `
 "FlexNet Publisher (https://en.wikipedia.org/wiki/FlexNet_Publisher)'s License server (from the range of default ports)"
 
@@ -11509,7 +11509,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "27000–27015",
+		Name: "27000-27015",
 		Description: `
 "Steam (https://en.wikipedia.org/wiki/Steam_(software)) (game client traffic)"
 
@@ -11548,7 +11548,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "27015–27030",
+		Name: "27015-27030",
 		Description: `
 "Steam (matchmaking and HLTV)"
 
@@ -11646,7 +11646,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "27500–27900",
+		Name: "27500-27900",
 		Description: `
 "id Software (https://en.wikipedia.org/wiki/Id_Software)'s QuakeWorld (https://en.wikipedia.org/wiki/QuakeWorld)"
 
@@ -11672,7 +11672,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "27901–27910",
+		Name: "27901-27910",
 		Description: `
 "id Software (https://en.wikipedia.org/wiki/Id_Software)'s Quake II (https://en.wikipedia.org/wiki/Quake_II) master server"
 
@@ -11698,7 +11698,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "27960–27969",
+		Name: "27960-27969",
 		Description: `
 "Activision (https://en.wikipedia.org/wiki/Activision)'s Enemy Territory (https://en.wikipedia.org/wiki/Wolfenstein:_Enemy_Territory) and id Software (https://en.wikipedia.org/wiki/Id_Software)'s Quake III Arena (https://en.wikipedia.org/wiki/Quake_III_Arena), Quake III and Quake Live (https://en.wikipedia.org/wiki/Quake_Live) and some ioquake3 derived games, such as Urban Terror (OpenArena incoming)"
 
@@ -11750,7 +11750,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "28770–28771",
+		Name: "28770-28771",
 		Description: `
 "AssaultCube Reloaded (/w/index.php?title=AssaultCube_Reloaded&action=edit&redlink=1), a video game based upon a modification of AssaultCube (https://en.wikipedia.org/wiki/AssaultCube)"
 
@@ -11763,7 +11763,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "28785–28786",
+		Name: "28785-28786",
 		Description: `
 "Cube 2: Sauerbraten (https://en.wikipedia.org/wiki/Cube_2:_Sauerbraten)"
 
@@ -11841,7 +11841,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "29900–29901",
+		Name: "29900-29901",
 		Description: `
 "Nintendo Wi-Fi Connection"
 
@@ -12192,7 +12192,7 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "43594–43595",
+		Name: "43594-43595",
 		Description: `
 "RuneScape (https://en.wikipedia.org/wiki/RuneScape)"
 
@@ -12231,7 +12231,7 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
-		Name: "47808–47823",
+		Name: "47808-47823",
 		Description: `
 "BACnet (https://en.wikipedia.org/wiki/BACnet) Building Automation and Control Networks"
 

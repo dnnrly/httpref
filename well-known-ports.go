@@ -378,7 +378,7 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
-		Name: "71–74",
+		Name: "71-74",
 		Description: `NETRJS ( https://en.wikipedia.org/wiki/NETRJS ) protocol
 
 IANA Status - Official
@@ -919,7 +919,7 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
-		Name: "225–241",
+		Name: "225-241",
 		Description: `Unspecified
 
 IANA Status - Official
@@ -930,7 +930,7 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
-		Name: "249–255",
+		Name: "249-255",
 		Description: `Unspecified
 
 IANA Status - Official
@@ -2637,7 +2637,7 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
-		Name: "1011–1020",
+		Name: "1011-1020",
 		Description: `Unspecified
 
 IANA Status - Official
@@ -2657,7 +2657,7 @@ UDP         - Reserved
 SCTP        - Unspecified
 
 
-z/OS ( https://en.wikipedia.org/wiki/Z/OS ) Network File System (NFS) (potentially ports 991–1023)
+z/OS ( https://en.wikipedia.org/wiki/Z/OS ) Network File System (NFS) (potentially ports 991-1023)
 
 IANA Status - Unofficial
 TCP         - Yes
