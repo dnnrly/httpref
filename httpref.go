@@ -70,7 +70,7 @@ func (r References) InRange(code string) References {
 
 		if strings.Contains(v.Name, "-") {
 			parts := strings.Split(v.Name, "-")
-			if code >= parts[0] || code <= parts[len(parts)-1] {
+			if code >= parts[0] && code <= parts[len(parts)-1] {
 				return References{v}
 			}
 		}

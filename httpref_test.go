@@ -30,20 +30,34 @@ func TestReferences_ByName(t *testing.T) {
 }
 
 func TestReferences_InRange(t *testing.T) {
-	tests := []string{
-		"19150",
-		"16406",
-		"5988",
-		"5989",
+	tests := []struct {
+		having string
+		expect string
+	}{
+		{having: "19150", expect: "10000-20000"},
+		{having: "16406", expect: "10000-20000"},
+		{having: "5988", expect: "5988-5989"},
+		{having: "5989", expect: "5988-5989"},
 	}
 
 	for _, tt := range tests {
-		t.Run(tt, func(t *testing.T) {
-			if got := RegisteredPorts.InRange(tt); len(got) != 1 {
+		t.Run(tt.having, func(t *testing.T) {
+			got := RegisteredPorts.InRange(tt.having)
+			if len(got) != 1 {
 				t.Errorf("References.InRange() = %v, want %v", len(got), 1)
+			}
+			if got[0].Name != tt.expect {
+				t.Errorf("References.InRange()[0] = %v, want %v", got[0].Name, tt.expect)
 			}
 		})
 	}
+
+	t.Run("Invalid port  should not return anything", func(t *testing.T) {
+		got := RegisteredPorts.InRange("70000") // Invalid port, should not return anything
+		if len(got) != 0 {
+			t.Errorf("References.InRange() = %v, want %v", len(got), 0)
+		}
+	})
 }
 
 func TestReference_SummarizeContainsCorrectParts(t *testing.T) {
