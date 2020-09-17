@@ -2,6 +2,8 @@
 
 This is a handy little helper that puts HTTP reference at your fingertips, when you're on the CLI, when you need it.
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W414S4U)
+
 
 [![godoc](https://godoc.org/github.com/dnnrly/httpref?status.svg)](http://godoc.org/github.com/dnnrly/httpref)
 [![report card](https://goreportcard.com/badge/github.com/dnnrly/httpref)](https://goreportcard.com/report/github.com/dnnrly/httpref)
