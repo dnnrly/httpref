@@ -87,3 +87,17 @@ func (r References) Titles() References {
 
 	return results
 }
+
+func (r References) Search(term string) References {
+	results := References{}
+
+	for _, v := range r {
+		if strings.Contains(strings.ToLower(v.Name), term) ||
+			strings.Contains(strings.ToLower(v.Summary), term) ||
+			strings.Contains(strings.ToLower(v.Description), term) {
+			results = append(results, v)
+		}
+	}
+
+	return results
+}
