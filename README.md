@@ -34,6 +34,8 @@ $ go get github.com/dnnrly/httpref/cmd/httpref
 
 # Usage
 
+## Filter by Title
+
 ```
 $ httpref 1
   1xx  Informational response
@@ -41,7 +43,7 @@ $ httpref 1
   101  Switching
   102  Processing
   103  Early hints
-  
+
 
 $ httpref 200
 200 - OK
@@ -59,6 +61,21 @@ The successful result of a PUT or a DELETE is often not a 200 OK but a 204 No Co
 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200
 ```
+
+## Full-text Search
+
+The `--search` option accepts a term to full-text search. This option is available for header, method, and status references.
+
+```
+$ httpref --search clear
+Clear-Site-Data
+  Clears browsing data (e.g. cookies, storage, cache) associated with the requesting
+   website.
+205
+  Reset Content
+431
+  Request Header Fields Too Large
+
 
 ## Important `make` targets
 
