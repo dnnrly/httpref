@@ -59,6 +59,31 @@ BIN=./httpref
     [ "$(echo $output | grep -c '/docs/Web/HTTP/Headers/Accept$')" -eq 1 ]
 }
 
+@test "Full-text search option works on root" {
+    run ${BIN} --search clear
+    [ $status -eq 0 ]
+}
+
+@test "Full-text search option works on headers" {
+    run ${BIN} headers --search cache
+    [ $status -eq 0 ]
+}
+
+@test "Full-text search option works on methods" {
+    run ${BIN} methods --search cache
+    [ $status -eq 0 ]
+}
+
+@test "Full-text search option works on statuses" {
+    run ${BIN} statuses --search cache
+    [ $status -eq 0 ]
+}
+
+@test "Full-text search option does NOT work on ports" {
+    run ${BIN} ports --search cache
+    [ $status -eq 1 ]
+}
+
 @test "Can change the width of the output" {
     run ${BIN} -w 70 100
     [ $status -eq 0 ]

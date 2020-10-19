@@ -129,6 +129,11 @@ func referenceCmd(results httpref.References) func(cmd *cobra.Command, args []st
 
 func portsReference() func(cmd *cobra.Command, args []string) {
 	return func(cmd *cobra.Command, args []string) {
+		if searchTerm != "" {
+			fmt.Fprintf(os.Stderr, "error: full-text search not supported\n")
+			os.Exit(1)
+		}
+
 		ref := append(httpref.WellKnownPorts, httpref.RegisteredPorts...)
 		var results httpref.References
 
