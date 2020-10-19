@@ -111,3 +111,8 @@ func TestPortsConsistencyValidation(t *testing.T) {
 		}
 	}
 }
+
+func TestReferences_Search(t *testing.T) {
+	n := Statuses.Search("auth")
+	assert.Equal(t, 8, len(n))
+}
