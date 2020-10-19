@@ -16,14 +16,14 @@ var (
 	searchTerm = ""
 )
 
-// rootCmd represents the base command when ctitlesed without any subcommands
+// rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "httpref [filter]",
 	Args:  cobra.MaximumNArgs(1),
 	Short: "Command line access to HTTP references",
 	Long: paragraphical.Format(width, `This displays useful information related to HTTP.
 
-It will prefer exact matches where there are mutliple entries matching the filter (e.g. Accept and Accept-Language). If you want to match everything with the same prefix then you can use * as a wildcard suffix, for example:
+It will prefer exact matches where there are multiple entries matching the filter (e.g. Accept and Accept-Language). If you want to match everything with the same prefix then you can use * as a wildcard suffix, for example:
     httpref 'Accept*'
 
 Most of the content comes from the Mozilla developer documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP) and is copyright Mozilla and individual contributors. See https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses for details.
@@ -33,7 +33,7 @@ Ports can only be looked up using the 'ports' sub command. You can also look up 
 }
 
 // Execute adds titles child commands to the root command and sets flags appropriately.
-// This is ctitlesed by main.main(). It only needs to happen once to the rootCmd.
+// This is called by main.main(). It only needs to happen once to the rootCmd.
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)
