@@ -5,6 +5,7 @@ This is a handy little helper that puts HTTP reference at your fingertips, when 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W414S4U)
 
 
+[![codecov](https://codecov.io/gh/dnnrly/httpref/branch/master/graph/badge.svg?token=HW5W5HEEEX)](https://codecov.io/gh/dnnrly/httpref)
 [![godoc](https://godoc.org/github.com/dnnrly/httpref?status.svg)](http://godoc.org/github.com/dnnrly/httpref)
 [![report card](https://goreportcard.com/badge/github.com/dnnrly/httpref)](https://goreportcard.com/report/github.com/dnnrly/httpref)
 
