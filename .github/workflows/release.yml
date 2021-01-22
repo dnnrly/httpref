@@ -8,13 +8,19 @@ jobs:
     name: Validate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - name: Check out code
+        uses: actions/checkout@master
       - uses: actions/setup-go@v1
         env:
           GO111MODULE: on
         with:
           go-version: '1.13'
-      - run: make test
+      - name: Test
+        run: make ci-test
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
   release:
     name: Release
     runs-on: ubuntu-latest
