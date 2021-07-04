@@ -28,7 +28,11 @@ It will prefer exact matches where there are multiple entries matching the filte
 
 Most of the content comes from the Mozilla developer documentation (https://developer.mozilla.org/en-US/docs/Web/HTTP) and is copyright Mozilla and individual contributors. See https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses for details.
 
-Ports can only be looked up using the 'ports' sub command. You can also look up ports inside a range. Information on ports comes from https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers under the Creative Commons Attribution-ShareAlike License.`),
+Ports can only be looked up using the 'ports' sub command. You can also look up ports inside a range. Information on ports comes from https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers under the Creative Commons Attribution-ShareAlike License.
+
+I'm really interested in how you feel about this tool. Please take the time to fill in this short survey:
+https://forms.gle/mHh6idwwUvdfYZM67
+`),
 	Run: root,
 }
 
