@@ -27,6 +27,8 @@ Well it boils down to 2 things:
 3. If I make it good enough then people will give me stars. This, as everyone knows, is a proxy for love and it will make up for many deficiencies in my life.
 4. My attention to detail is incredible. I therefore invite you to sponsor me using the links at the top of the page. :)
 
+Before we get any further, I'm really interested in how you feel about this tool. Please take the time to fill in this short survey: https://forms.gle/mHh6idwwUvdfYZM67
+
 # Installation
 
 ```shell
