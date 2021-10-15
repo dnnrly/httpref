@@ -35,9 +35,8 @@ clean-deps:
 	rm -rf ./libexec
 	rm -rf ./share
 
-./bin/bats:
-	git clone https://github.com/bats-core/bats-core.git ./tmp/bats
-	./tmp/bats/install.sh .
+./bin/godog:
+	GOBIN=$(BASE_DIR)/bin go install github.com/cucumber/godog/cmd/godog@v0.12.0
 
 ./bin/golangci-lint:
 	curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s v1.17.1
@@ -46,7 +45,7 @@ clean-deps:
 	curl -sfL -o ./tmp/tparse.tar.gz https://github.com/mfridman/tparse/releases/download/v0.7.4/tparse_0.7.4_Linux_x86_64.tar.gz
 	tar -xf ./tmp/tparse.tar.gz -C ./bin
 
-test-deps: ./bin/tparse ./bin/bats ./bin/golangci-lint
+test-deps: ./bin/tparse ./bin/godog ./bin/golangci-lint
 	$(GO_BIN) get -v ./...
 	$(GO_BIN) mod tidy
 
@@ -68,8 +67,8 @@ deps: build-deps test-deps
 test: ./bin/tparse
 	$(GO_BIN) test -json ./... | tparse -all
 
-acceptance-test: ./bin/bats
-	bats --tap test/*.bats
+acceptance-test: ./bin/godog
+	cd test; godog 
 
 ci-test:
 	$(GO_BIN) test -race -coverprofile=coverage.txt -covermode=atomic ./...
