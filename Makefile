@@ -1,5 +1,6 @@
 GO111MODULE=on
 
+
 CURL_BIN ?= curl
 GO_BIN ?= go
 GORELEASER_BIN ?= goreleaser
@@ -21,11 +22,10 @@ export PATH := $(BASE_DIR)/bin:$(PATH)
 install:
 	$(GO_BIN) install -v ./cmd/$(NAME)
 
-build:
-	$(GO_BIN) build -v ./cmd/$(NAME)
+build: ./bin/httpref
 
 clean:
-	rm -f $(NAME)
+	rm -f ./bin/$(NAME)
 	rm -rf dist/
 	rm -rf cmd/$(NAME)/dist
 
@@ -34,6 +34,9 @@ clean-deps:
 	rm -rf ./tmp
 	rm -rf ./libexec
 	rm -rf ./share
+
+./bin/httpref:
+	$(GO_BIN) build -o ./bin/$(NAME) -v ./cmd/$(NAME)
 
 ./bin/godog:
 	GOBIN=$(BASE_DIR)/bin go install github.com/cucumber/godog/cmd/godog@v0.12.0
@@ -67,7 +70,7 @@ deps: build-deps test-deps
 test: ./bin/tparse
 	$(GO_BIN) test -json ./... | tparse -all
 
-acceptance-test: ./bin/godog
+acceptance-test: build ./bin/godog
 	cd test; godog 
 
 ci-test:
