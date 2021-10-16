@@ -1,7 +1,6 @@
 package test
 
 import (
-	"context"
 	"regexp"
 
 	"errors"
@@ -11,9 +10,13 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+
 	"github.com/cucumber/godog"
 	"github.com/cucumber/godog/colors"
 	"github.com/spf13/pflag"
+
+	"github.com/dnnrly/httpref/test/common"
 )
 
 var opts = godog.Options{Output: colors.Colored(os.Stdout)}
@@ -105,14 +108,15 @@ func theOutputWillContainTheAcceptHeaders() error {
 	return nil
 }
 
-func eachLineInOutputIsShorterThanCharacters(expectedLineLength int) error {
-	lines := strings.Split(strings.Replace(Output, "\r\n", "\n", -1), "\n")
+type localTestContext struct {
+	common.TestContext
+}
+
+func (c *localTestContext) eachLineInOutputIsShorterThanCharacters(expectedLineLength int) error {
+	lines := strings.Split(strings.Replace(c.CmdResult.Output, "\r\n", "\n", -1), "\n")
 	for i := range lines {
 		element := lines[i]
-		lineLength := len(element)
-		if lineLength > expectedLineLength {
-			return fmt.Errorf("line number %d was expected to be shorter than %d characters, but was %d", i, expectedLineLength, lineLength)
-		}
+		assert.LessOrEqual(c, expectedLineLength, len(element))
 	}
 	return nil
 }
@@ -147,19 +151,21 @@ func InitializeTestSuite(ctx *godog.TestSuiteContext) {
 }
 
 func InitializeScenario(ctx *godog.ScenarioContext) {
-	ctx.Before(func(ctx context.Context, sc *godog.Scenario) (context.Context, error) {
-		Args = []string{} // clean the state before every scenario
-		ExitCode = -1
-		Output = ""
-		return nil, nil
-	})
+	tc := localTestContext{TestContext: common.TestContext{BinaryPath: "httpref"}}
+	common.InitializeScenario(ctx, tc.TestContext)
+	//ctx.Before(func(ctx context.Context, sc *godog.Scenario) (context.Context, error) {
+	//	Args = []string{} // clean the state before every scenario
+	//	ExitCode = -1
+	//	Output = ""
+	//	return nil, nil
+	//})
 
-	ctx.Step(`^the args are "([^"]*)"$`, theArgsAre)
-	ctx.Step(`^return status code is not (\d+)$`, returnStatusCodeIsNot)
-	ctx.Step(`^return status code is (\d+)$`, returnStatusCodeIs)
-	ctx.Step(`^the output will not contain the Accept headers$`, theOutputWillNotContainTheAcceptHeaders)
-	ctx.Step(`^the output will contain the Accept headers$`, theOutputWillContainTheAcceptHeaders)
-	ctx.Step(`^each line in output is shorter than (\d+) characters$`, eachLineInOutputIsShorterThanCharacters)
-	ctx.Step(`^the output will contain the http string$`, theOutputWillContainTheHttpString)
-	ctx.Step(`^the output will not contain the http string$`, theOutputWillNotContainTheHttpString)
+	//ctx.Step(`^the args are "([^"]*)"$`, theArgsAre)
+	//ctx.Step(`^return status code is not (\d+)$`, returnStatusCodeIsNot)
+	//ctx.Step(`^return status code is (\d+)$`, returnStatusCodeIs)
+	//ctx.Step(`^the output will not contain the Accept headers$`, theOutputWillNotContainTheAcceptHeaders)
+	//ctx.Step(`^the output will contain the Accept headers$`, theOutputWillContainTheAcceptHeaders)
+	ctx.Step(`^each line in output is shorter than (\d+) characters$`, tc.eachLineInOutputIsShorterThanCharacters)
+	//ctx.Step(`^the output will contain the http string$`, theOutputWillContainTheHttpString)
+	//ctx.Step(`^the output will not contain the http string$`, theOutputWillNotContainTheHttpString)
 }
