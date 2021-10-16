@@ -49,7 +49,7 @@ func theArgsAre(available string) error {
 		Args = strings.Fields(available)
 	}
 
-	cmd := exec.Command("httpref", Args...)
+	cmd := exec.Command("../bin/httpref", Args...)
 	out, err := cmd.Output()
 	if err != nil {
 		var e *exec.ExitError
