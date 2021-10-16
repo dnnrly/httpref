@@ -2,7 +2,7 @@
 Feature: test httpref
 
   Scenario: Fails with no parameters
-    When the app runs with parameters ""
+    When the app runs with parameters " "
     Then the app exits with an error
 
   Scenario: Check that filtering from root works
@@ -44,7 +44,7 @@ Feature: test httpref
     And the app output does not contain "/docs/Web/HTTP/Headers/Accept"
 
   Scenario: Finds unique entry on exact match on headers
-    Given the app runs with parameters "headers  Accept"
+    Given the app runs with parameters "headers Accept"
     Then the app exits without error
     And the app output contains "/docs/Web/HTTP/Headers/Accept"
 

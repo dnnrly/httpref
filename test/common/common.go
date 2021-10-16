@@ -20,8 +20,9 @@ type TestContext struct {
 		parameters string
 	}
 	CmdResult struct {
-		Output string
-		Err    error
+		Output   string
+		Err      error
+		ExitCode int
 	}
 }
 
@@ -38,8 +39,23 @@ func (c *TestContext) theAppRunsWithParameters(args string) error {
 	output, err := cmd.CombinedOutput()
 	c.CmdResult.Output = string(output)
 	c.CmdResult.Err = err
+	c.CmdRestul.ExitCode = extractExitCode(cmd, err)
 
 	return nil
+}
+
+func extractExitCode(cmd exec.Command, err error) int {
+	if err != nil {
+		var e *exec.ExitError
+		if errors.As(c.CmdResult.Err, &e) {
+			return e.ExitCode()
+
+		}
+	}
+	if cmd.ProcessState != nil {
+		return cmd.ProcessState.ExitCode()
+	}
+	return -1
 }
 
 func (c *TestContext) theAppExitsWithoutError() error {
@@ -53,23 +69,17 @@ func (c *TestContext) theAppExitsWithAnError() error {
 }
 
 func (c *TestContext) theAppExitCodeIs(exitCode int) error {
-	var e *exec.ExitError
-	if errors.As(c.CmdResult.Err, &e) {
-		assert.Equal(c, exitCode, e.ExitCode())
-	}
+	assert.Equal(c, exitCode, c.CmdResult.ExitCode)
 	return nil
 }
 
 func (c *TestContext) theAppExitCodeIsNot(exitCode int) error {
-	var e *exec.ExitError
-	if errors.As(c.CmdResult.Err, &e) {
-		assert.NotEqual(c, exitCode, e.ExitCode())
-	}
+	assert.NotEqual(c, exitCode, c.CmdResult.ExitCode)
 	return nil
 }
 
 func (c *TestContext) theAppOutputContains(expected string) error {
-	expected = strings.ReplaceAll(expected, "\\\"", "\"")
+	//expected = strings.ReplaceAll(expected, "\\\"", "\"")
 	assert.Contains(c, c.CmdResult.Output, expected)
 	return c.err
 }
