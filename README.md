@@ -32,7 +32,7 @@ Before we get any further, I'm really interested in how you feel about this tool
 # Installation
 
 ```shell
-$ go get github.com/dnnrly/httpref/cmd/httpref
+$ go install github.com/dnnrly/httpref/cmd/httpref@latest
 ```
 
 # Usage
