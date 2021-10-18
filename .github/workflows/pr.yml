@@ -15,8 +15,6 @@ jobs:
         run: make ci-test
       - name: Build
         run: make build
-      - name: Explore environment
-        run: find . | grep -v git
       - name: Acceptance tests
         run: make acceptance-test
         env:
