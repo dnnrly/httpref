@@ -6,40 +6,16 @@ import (
 
 	"errors"
 	"fmt"
-	"os"
 	"os/exec"
 	"strings"
-	"testing"
 
 	"github.com/cucumber/godog"
-	"github.com/cucumber/godog/colors"
-	"github.com/spf13/pflag"
 )
-
-var opts = godog.Options{Output: colors.Colored(os.Stdout)}
 
 const (
 	matchUrlRegex = `/docs/Web/HTTP/Headers/Accept`
 	httpRegex     = `Hypertext Transfer Protocol`
 )
-
-func init() {
-	godog.BindCommandLineFlags("godog.", &opts)
-}
-
-func TestMain(m *testing.M) {
-	pflag.Parse()
-	opts.Paths = pflag.Args()
-
-	status := godog.TestSuite{
-		Name:                 "godogs",
-		TestSuiteInitializer: InitializeTestSuite,
-		ScenarioInitializer:  InitializeScenario,
-		Options:              &opts,
-	}.Run()
-
-	os.Exit(status)
-}
 
 func theArgsAre(available string) error {
 	var err error
