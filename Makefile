@@ -71,7 +71,6 @@ test:
 	$(GO_BIN) test -json ./... | tparse -all
 
 acceptance-test:
-	echo $(PATH)
 	cd test; godog 
 
 ci-test:
