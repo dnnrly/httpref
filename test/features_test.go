@@ -12,6 +12,12 @@ import (
 	"github.com/cucumber/godog"
 )
 
+var (
+	Args     []string
+	ExitCode int
+	Output   string
+)
+
 const (
 	matchUrlRegex = `/docs/Web/HTTP/Headers/Accept`
 	httpRegex     = `Hypertext Transfer Protocol`
