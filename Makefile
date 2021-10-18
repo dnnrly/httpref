@@ -67,10 +67,10 @@ build-deps: ./bin/goreleaser
 
 deps: build-deps test-deps
 
-test: ./bin/tparse
+test:
 	$(GO_BIN) test -json ./... | tparse -all
 
-acceptance-test: build ./bin/godog
+acceptance-test:
 	cd test; godog 
 
 ci-test:
