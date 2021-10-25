@@ -22,8 +22,6 @@ export PATH := $(BASE_DIR)/bin:$(PATH)
 install:
 	$(GO_BIN) install -v ./cmd/$(NAME)
 
-build: ./bin/httpref
-
 clean:
 	rm -f ./bin/$(NAME)
 	rm -rf dist/
@@ -38,11 +36,13 @@ clean-deps:
 ./bin/httpref:
 	$(GO_BIN) build -o ./bin/$(NAME) -v ./cmd/$(NAME)
 
+build: ./bin/httpref
+
 ./bin/godog:
 	GOBIN=$(BASE_DIR)/bin go install github.com/cucumber/godog/cmd/godog@v0.12.0
 
 ./bin/golangci-lint:
-	curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s v1.17.1
+	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s v1.42.1
 
 ./bin/tparse: ./bin ./tmp
 	curl -sfL -o ./tmp/tparse.tar.gz https://github.com/mfridman/tparse/releases/download/v0.7.4/tparse_0.7.4_Linux_x86_64.tar.gz
@@ -76,7 +76,7 @@ acceptance-test:
 ci-test:
 	$(GO_BIN) test -race -coverprofile=coverage.txt -covermode=atomic ./...
 
-lint: ./bin/golangci-lint
+lint:
 	golangci-lint run
 
 release: clean
