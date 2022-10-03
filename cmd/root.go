@@ -50,6 +50,7 @@ func init() {
 	rootCmd.PersistentFlags().IntVarP(&width, "width", "w", width, "Width to fit the output to")
 	rootCmd.PersistentFlags().StringVarP(&searchTerm, "search", "", searchTerm, "Full-text search term")
 
+	rootCmd.AddCommand(subCmd("html", "html", httpref.Html))
 	rootCmd.AddCommand(subCmd("methods", "method", httpref.Methods))
 	rootCmd.AddCommand(subCmd("statuses", "status", httpref.Statuses))
 	rootCmd.AddCommand(subCmd("headers", "header", httpref.Headers))
@@ -73,6 +74,7 @@ func subCmd(name, alias string, ref httpref.References) *cobra.Command {
 func root(cmd *cobra.Command, args []string) {
 	if titles {
 		results := append(httpref.Statuses.Titles(), httpref.Headers.Titles()...)
+		results = append(results, httpref.Html.Titles()...)
 		results = append(results, httpref.Methods.Titles()...)
 		results = append(results, httpref.WellKnownPorts.Titles()...)
 		results = append(results, httpref.RegisteredPorts.Titles()...)
@@ -89,6 +91,7 @@ func root(cmd *cobra.Command, args []string) {
 
 	results := append(httpref.Headers, httpref.Methods...)
 	results = append(results, httpref.Statuses...)
+	results = append(results, httpref.Html...)
 
 	if searchTerm != "" {
 		results = results.Search(searchTerm)
