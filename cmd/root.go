@@ -50,10 +50,17 @@ func init() {
 	rootCmd.PersistentFlags().IntVarP(&width, "width", "w", width, "Width to fit the output to")
 	rootCmd.PersistentFlags().StringVarP(&searchTerm, "search", "", searchTerm, "Full-text search term")
 
-	rootCmd.AddCommand(subCmd("html", "html", httpref.Html))
 	rootCmd.AddCommand(subCmd("methods", "method", httpref.Methods))
 	rootCmd.AddCommand(subCmd("statuses", "status", httpref.Statuses))
 	rootCmd.AddCommand(subCmd("headers", "header", httpref.Headers))
+
+	rootCmd.AddCommand(&cobra.Command{
+		Use:     fmt.Sprintf("%s [filter]", "html"),
+		Aliases: []string{},
+		Short:   "References for common HTML elements",
+		Run:     referenceCmd(httpref.Html),
+	})
+
 	rootCmd.AddCommand(&cobra.Command{
 		Use:     fmt.Sprintf("%s [filter]", "ports"),
 		Aliases: []string{"port"},
