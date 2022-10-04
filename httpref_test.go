@@ -116,3 +116,29 @@ func TestReferences_Search(t *testing.T) {
 	n := Statuses.Search("auth")
 	assert.Equal(t, 8, len(n))
 }
+
+func TestReferencesHtml_ByName(t *testing.T) {
+	tests := []struct {
+		name string
+		want int
+	}{
+		{name: "<a>", want: 1},
+		{name: "<div>", want: 1},
+		{name: "<img>", want: 1},
+		{name: "<script>", want: 1},
+		{name: "<*", want: 134},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := Html.ByName(tt.name); len(got) != tt.want {
+				t.Errorf("References.ByName() = %v, want %v", len(got), tt.want)
+			}
+		})
+	}
+}
+
+func TestReferencesHtml_Titles(t *testing.T) {
+	n := Html.Titles()
+	assert.Equal(t, 1, len(n))
+}
