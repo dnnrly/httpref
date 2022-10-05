@@ -45,8 +45,7 @@ build: ./bin/httpref
 	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s v1.42.1
 
 ./bin/tparse: ./bin ./tmp
-	curl -sfL -o ./tmp/tparse.tar.gz https://github.com/mfridman/tparse/releases/download/v0.7.4/tparse_0.7.4_Linux_x86_64.tar.gz
-	tar -xf ./tmp/tparse.tar.gz -C ./bin
+	GOBIN=$(BASE_DIR)/bin go install github.com/mfridman/tparse@v0.7.4
 
 test-deps: ./bin/tparse ./bin/godog ./bin/golangci-lint
 	$(GO_BIN) get -v ./...
@@ -67,7 +66,7 @@ build-deps: ./bin/goreleaser
 
 deps: build-deps test-deps
 
-test:
+test: ./bin/tparse
 	$(GO_BIN) test -json ./... | tparse -all
 
 acceptance-test:
