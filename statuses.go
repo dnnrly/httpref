@@ -600,4 +600,13 @@ Network operators sometimes require some authentication, acceptance of terms, or
 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/511`,
 	},
+	{
+		Name:    "599",
+		Summary: "Network Connect Timeout Error",
+		Description: `The HTTP 599 Network Connect Timeout Error response status code signals a network connect timeout behind the proxy to a client in front of the proxy.
+
+This status code is not specified in any RFCs, but is used by some HTTP proxies to signal a network connect timeout behind the proxy to a client in front of the proxy.
+
+https://httpstatus.in/599/`,
+	},
 }

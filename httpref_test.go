@@ -18,6 +18,7 @@ func TestReferences_ByName(t *testing.T) {
 		{name: "40", want: 10},
 		{name: "501", want: 1},
 		{name: "501*", want: 2},
+		{name: "599", want: 1},
 	}
 
 	for _, tt := range tests {
