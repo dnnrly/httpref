@@ -112,17 +112,7 @@ func root(cmd *cobra.Command, args []string) {
 }
 
 func printResults(results httpref.References) {
-	switch len(results) {
-	case 0:
-		fmt.Fprintf(os.Stderr, "Filter not found any results\n")
-		os.Exit(1)
-	case 1:
-		fmt.Printf("%s\n", results[0].Describe(width))
-	default:
-		for _, r := range results {
-			fmt.Printf("%s\n", r.Summarize(width))
-		}
-	}
+	httpref.PrintResultsWithStyle(results, httpref.Summary)
 }
 
 func referenceCmd(results httpref.References) func(cmd *cobra.Command, args []string) {
