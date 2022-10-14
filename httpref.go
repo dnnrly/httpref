@@ -1,11 +1,7 @@
 package httpref
 
 import (
-	"fmt"
 	"strings"
-
-	para "github.com/dnnrly/paragraphical"
-	"github.com/muesli/termenv"
 )
 
 // Reference is a single reference item
@@ -18,28 +14,6 @@ type Reference struct {
 
 // References is a collection of Reference objects
 type References []Reference
-
-// Summarize creates a block of text that summarizes this reference
-func (r Reference) Summarize(width int) string {
-	name := termenv.String(r.Name)
-	summary := termenv.String(r.Summary).Italic()
-	return para.Format(
-		width,
-		fmt.Sprintf("%s\n  %s", name.Bold().Underline(), summary),
-	)
-}
-
-// Describe creates a full, formated description of a reference
-func (r Reference) Describe(width int) string {
-	text := fmt.Sprintf(
-		"%s\n  %s\n\n%s",
-		termenv.String(r.Name).Bold().Underline(),
-		termenv.String(r.Summary).Italic(),
-		r.Description,
-	)
-
-	return para.Format(width, text)
-}
 
 // ByName finds all of the Reference with a matching Name field
 func (r References) ByName(code string) References {

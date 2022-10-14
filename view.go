@@ -3,52 +3,63 @@ package httpref
 import (
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/charmbracelet/lipgloss"
 )
 
 var (
-	baseStyle = lipgloss.NewStyle().
-			Foreground(lipgloss.Color("#FAFAFA")).
-			Background(lipgloss.Color("#7D56F4")).
-			PaddingTop(1)
-		//			PaddingLeft(4)
-	resultStyle = baseStyle.Copy()
+	resultStyle, nameStyle, summaryStyle, descriptionStyle lipgloss.Style
+	passedRenderDate                                       time.Time
 )
-
-const width = 100
 
 type RenderStyle int64
 
-const (
-	Summary    RenderStyle = 0
-	SearchTerm             = 1
-	Titles                 = 2
-	ByName                 = 3
-)
-
-func getRendererByStyle(style RenderStyle) func(string) string {
-	switch style {
-	case Summary:
-		return resultStyle.Render
-	default:
-		return func(str string) string {
-			return fmt.Sprintf("%s\n", str)
-		}
-	}
+// Summarize creates a block of text that summarizes this reference
+func (r Reference) Summarize() string {
+	name := nameStyle.Render(r.Name)
+	summary := summaryStyle.Render(r.Summary)
+	return lipgloss.JoinVertical(lipgloss.Bottom, name, summary)
 }
-func PrintResultsWithStyle(results References, style RenderStyle) {
-	render := getRendererByStyle(style)
+
+// Describe creates a full, formated description of a reference
+func (r Reference) Describe() string {
+	name := nameStyle.Render(r.Name)
+	summary := summaryStyle.PaddingLeft(2).Render(r.Summary)
+	description := descriptionStyle.PaddingTop(2).Render(r.Description)
+
+	return lipgloss.JoinVertical(lipgloss.Bottom, name, summary, description)
+}
+
+func renderStyles(baseStyle lipgloss.Style) {
+	resultStyle = baseStyle.Copy()
+	nameStyle = baseStyle.Copy().
+		Foreground(lipgloss.Color("86")).
+		Bold(true).
+		Underline(true)
+	summaryStyle = baseStyle.Copy().
+		PaddingLeft(2).
+		Italic(true)
+	descriptionStyle = baseStyle.Copy().
+		Foreground(lipgloss.Color("#B2BEB5"))
+}
+
+func PrintResultsWithStyle(results References, rootStyle lipgloss.Style) {
+	if passedRenderDate.IsZero() {
+		passedRenderDate = time.Now()
+		renderStyles(rootStyle)
+	}
+	//render := getRendererByStyle(style)
 	switch len(results) {
 	case 0:
-		res := render("Filter not found any results\n")
+		res := "Filter not found any results\n"
 		fmt.Fprintf(os.Stderr, res)
 		os.Exit(1)
 	case 1:
-		fmt.Printf("%s\n", render(results[0].Describe(width)))
+		fmt.Printf("%s\n", results[0].Describe())
 	default:
 		for _, r := range results {
-			fmt.Printf("%s\n", render(r.Summarize(width)))
+			fmt.Printf("%s\n", r.Summarize())
 		}
 	}
 }

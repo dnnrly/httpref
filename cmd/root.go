@@ -3,17 +3,21 @@ package cmd
 import (
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/dnnrly/httpref"
 	"github.com/spf13/cobra"
 
-	"github.com/dnnrly/paragraphical"
+	"github.com/charmbracelet/lipgloss"
 )
 
 var (
-	titles     = false
-	width      = 100
-	searchTerm = ""
+	titles        = false
+	width         = 100
+	baseRootStyle lipgloss.Style
+
+	searchTerm       = ""
+	passedRenderDate time.Time
 )
 
 // rootCmd represents the base command when called without any subcommands
@@ -21,7 +25,7 @@ var rootCmd = &cobra.Command{
 	Use:   "httpref [filter]",
 	Args:  cobra.MaximumNArgs(1),
 	Short: "Command line access to HTTP references",
-	Long: paragraphical.Format(width, `This displays useful information related to HTTP.
+	Long: lipgloss.NewStyle().Width(width).Render(`This displays useful information related to HTTP.
 
 It will prefer exact matches where there are multiple entries matching the filter (e.g. Accept and Accept-Language). If you want to match everything with the same prefix then you can use * as a wildcard suffix, for example:
     httpref 'Accept*'
@@ -112,7 +116,11 @@ func root(cmd *cobra.Command, args []string) {
 }
 
 func printResults(results httpref.References) {
-	httpref.PrintResultsWithStyle(results, httpref.Summary)
+	if passedRenderDate.IsZero() {
+		passedRenderDate = time.Now()
+		baseRootStyle = lipgloss.NewStyle().Width(width)
+	}
+	httpref.PrintResultsWithStyle(results, baseRootStyle)
 }
 
 func referenceCmd(results httpref.References) func(cmd *cobra.Command, args []string) {
