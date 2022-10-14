@@ -3,7 +3,6 @@ package httpref
 import (
 	"fmt"
 	"os"
-	"time"
 
 	"github.com/charmbracelet/glamour"
 	"github.com/charmbracelet/lipgloss"
@@ -12,7 +11,7 @@ import (
 var (
 	resultStyle, nameStyle, summaryStyle lipgloss.Style
 	descriptionStyle                     *glamour.TermRenderer
-	passedRenderDate                     time.Time
+	areStylesPopulated                   bool
 )
 
 type RenderStyle int64
@@ -59,8 +58,9 @@ func renderStyles(baseStyle lipgloss.Style) {
 }
 
 func PrintResultsWithStyle(results References, rootStyle lipgloss.Style) {
-	if passedRenderDate.IsZero() {
-		passedRenderDate = time.Now()
+	// doing the population in a point where the width should not change anymore
+	if !areStylesPopulated {
+		areStylesPopulated = true
 		renderStyles(rootStyle)
 	}
 	//render := getRendererByStyle(style)

@@ -3,7 +3,6 @@ package cmd
 import (
 	"fmt"
 	"os"
-	"time"
 
 	"github.com/dnnrly/httpref"
 	"github.com/spf13/cobra"
@@ -17,7 +16,7 @@ var (
 	baseRootStyle lipgloss.Style
 
 	searchTerm       = ""
-	passedRenderDate time.Time
+	isStylePopulated bool
 )
 
 // rootCmd represents the base command when called without any subcommands
@@ -116,8 +115,9 @@ func root(cmd *cobra.Command, args []string) {
 }
 
 func printResults(results httpref.References) {
-	if passedRenderDate.IsZero() {
-		passedRenderDate = time.Now()
+	// doing the population in a point where the width should not change anymore
+	if !isStylePopulated {
+		isStylePopulated = true
 		baseRootStyle = lipgloss.NewStyle().Width(width)
 	}
 	httpref.PrintResultsWithStyle(results, baseRootStyle)
