@@ -5,12 +5,14 @@ import (
 	"os"
 	"time"
 
+	"github.com/charmbracelet/glamour"
 	"github.com/charmbracelet/lipgloss"
 )
 
 var (
-	resultStyle, nameStyle, summaryStyle, descriptionStyle lipgloss.Style
-	passedRenderDate                                       time.Time
+	resultStyle, nameStyle, summaryStyle lipgloss.Style
+	descriptionStyle                     *glamour.TermRenderer
+	passedRenderDate                     time.Time
 )
 
 type RenderStyle int64
@@ -26,7 +28,11 @@ func (r Reference) Summarize() string {
 func (r Reference) Describe() string {
 	name := nameStyle.Render(r.Name)
 	summary := summaryStyle.PaddingLeft(2).Render(r.Summary)
-	description := descriptionStyle.PaddingTop(2).Render(r.Description)
+	description, err := descriptionStyle.Render(r.Description)
+	if err != nil {
+		// hoping this doesn't happen as most commands here suceed without issue
+		panic(err)
+	}
 
 	return lipgloss.JoinVertical(lipgloss.Bottom, name, summary, description)
 }
@@ -37,11 +43,19 @@ func renderStyles(baseStyle lipgloss.Style) {
 		Foreground(lipgloss.Color("86")).
 		Bold(true).
 		Underline(true)
-	summaryStyle = baseStyle.Copy().
-		PaddingLeft(2).
-		Italic(true)
-	descriptionStyle = baseStyle.Copy().
-		Foreground(lipgloss.Color("#B2BEB5"))
+
+	summaryStyle = baseStyle.Copy()
+	r, err := glamour.NewTermRenderer(
+		// detect background color and pick either the default dark or light theme
+		glamour.WithAutoStyle(),
+		// wrap output at specific width (default is 80)
+		glamour.WithWordWrap(baseStyle.GetWidth()),
+	)
+	if err != nil {
+		// hoping this doesn't happen as most commands here suceed without issue
+		panic(err)
+	}
+	descriptionStyle = r
 }
 
 func PrintResultsWithStyle(results References, rootStyle lipgloss.Style) {
