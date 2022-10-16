@@ -43,6 +43,10 @@ func renderStyles(baseStyle lipgloss.Style) {
 		Bold(true).
 		Underline(true)
 
+	margin := uint(1)
+	glamour.DarkStyleConfig.Document.Margin = &margin
+	glamour.LightStyleConfig.Document.Margin = &margin
+
 	summaryStyle = baseStyle.Copy()
 	r, err := glamour.NewTermRenderer(
 		// detect background color and pick either the default dark or light theme
