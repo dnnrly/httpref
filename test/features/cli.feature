@@ -8,7 +8,6 @@ Feature: test httpref
   Scenario: Check that filtering from root works
     Given the app runs with parameters "1xx"
     Then the app exits without error
-    
 
   Scenario: Check that filtering from alias status works
     Given the app runs with parameters "statuses 1xx"
@@ -34,6 +33,14 @@ Feature: test httpref
     Given the app runs with parameters "header Accept-Ranges"
     Then the app exits without error
 
+  Scenario: Check that html filtering from root works
+    Given the app runs with parameters "<abbr>"
+    Then the app exits without error
+
+  Scenario: Check that filtering from html works
+    Given the app runs with parameters "html <abbr>"
+    Then the app exits without error
+
   Scenario: Finds unique entry on exact match on root
     Given the app runs with parameters "Accept"
     Then the app exits without error
@@ -48,6 +55,16 @@ Feature: test httpref
     Given the app runs with parameters "headers Accept"
     Then the app exits without error
     And the app output contains "/docs/Web/HTTP/Headers/Accept"
+
+  Scenario: Finds unique html entry on exact match on root
+    Given the app runs with parameters "<abbr>"
+    Then the app exits without error
+    And the app output contains "docs/Web/HTML/Element/abbr"
+
+  Scenario: Finds unique entry on exact match on html
+    Given the app runs with parameters "html <abbr>"
+    Then the app exits without error
+    And the app output contains "docs/Web/HTML/Element/abbr"
 
   Scenario: Full-text search option works on root
     Given the app runs with parameters "--search clear"
@@ -68,6 +85,10 @@ Feature: test httpref
   Scenario: Full-text search option does NOT work on ports
     Given the app runs with parameters "ports --search cache"
     Then the app exits with an error
+
+  Scenario: Full-text search option works on html
+    Given the app runs with parameters "html --search anchor"
+    Then the app exits without error
 
   Scenario: Can change the width of the output
     Given the app runs with parameters "-w 70 100"

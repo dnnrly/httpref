@@ -53,6 +53,14 @@ func init() {
 	rootCmd.AddCommand(subCmd("methods", "method", httpref.Methods))
 	rootCmd.AddCommand(subCmd("statuses", "status", httpref.Statuses))
 	rootCmd.AddCommand(subCmd("headers", "header", httpref.Headers))
+
+	rootCmd.AddCommand(&cobra.Command{
+		Use:     fmt.Sprintf("%s [filter]", "html"),
+		Aliases: []string{},
+		Short:   "References for common HTML elements",
+		Run:     referenceCmd(httpref.Html),
+	})
+
 	rootCmd.AddCommand(&cobra.Command{
 		Use:     fmt.Sprintf("%s [filter]", "ports"),
 		Aliases: []string{"port"},
@@ -73,6 +81,7 @@ func subCmd(name, alias string, ref httpref.References) *cobra.Command {
 func root(cmd *cobra.Command, args []string) {
 	if titles {
 		results := append(httpref.Statuses.Titles(), httpref.Headers.Titles()...)
+		results = append(results, httpref.Html.Titles()...)
 		results = append(results, httpref.Methods.Titles()...)
 		results = append(results, httpref.WellKnownPorts.Titles()...)
 		results = append(results, httpref.RegisteredPorts.Titles()...)
@@ -89,6 +98,7 @@ func root(cmd *cobra.Command, args []string) {
 
 	results := append(httpref.Headers, httpref.Methods...)
 	results = append(results, httpref.Statuses...)
+	results = append(results, httpref.Html...)
 
 	if searchTerm != "" {
 		results = results.Search(searchTerm)

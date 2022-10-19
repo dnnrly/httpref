@@ -63,11 +63,22 @@ The meaning of a success depends on the HTTP request method:
 The successful result of a PUT or a DELETE is often not a 200 OK but a 204 No Content (or a 201 Created when the resource is uploaded for the first time).
 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200
+
+
+$ httpref <div>
+<div>
+  The Content Division element
+
+The <div> HTML element is the generic container for flow content. It has no effect on the content or
+layout until styled in some way using "CSS" (e.g. styling is directly applied to it, or some kind of
+layout model like Flexbox is applied to its parent element).
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div
 ```
 
 ## Full-text Search
 
-The `--search` option accepts a term to full-text search. This option is available for header, method, and status references.
+The `--search` option accepts a term to full-text search. This option is available for header, html, method, and status references.
 
 ```
 $ httpref --search clear
@@ -78,6 +89,42 @@ Clear-Site-Data
   Reset Content
 431
   Request Header Fields Too Large
+```
+
+## HTML Elements Reference
+
+The `html` subcommand looks up 100+ active and deprecated HTML elements.
+
+```
+$ httpref html <abbr>
+<abbr>
+  The Abbreviation element
+
+The <abbr> HTML element represents an abbreviation or acronym.
+
+When including an abbreviation or acronym, provide a full expansion of the term in plain text on
+first use, along with the "<abbr>" to mark up the abbreviation. This informs the user what the
+abbreviation or acronym means.
+
+The optional "title" attribute can provide an expansion for the abbreviation or acronym when a full
+expansion is not present. This provides a hint to user agents on how to announce/display the content
+while informing all users what the abbreviation means. If present, "title" must contain this full
+description and nothing else.
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr
+
+
+$ httpref html --search anchor
+<a>
+  The Anchor element
+
+The <a> HTML element (or _anchor_ element), with its "href" attribute, creates a hyperlink to web
+pages, files, email addresses, locations in the same page, or anything else a URL can address.
+
+Content within each "<a>" _should_ indicate the link's destination. If the "href" attribute is
+present, pressing the enter key while focused on the "<a>" element will activate it.
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
 ```
 
 ## Important `make` targets
