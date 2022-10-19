@@ -8,10 +8,8 @@ jobs:
     name: Validate
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
+      - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
       - name: Setup Go
         uses: actions/setup-go@v1
         env:
