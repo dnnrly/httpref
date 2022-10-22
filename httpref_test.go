@@ -88,6 +88,14 @@ func TestReference_SummarizeContainsCorrectSummary(t *testing.T) {
 	assert.Contains(t, s, "summary")
 }
 
+func TestReference_DescribeLooksUpExpectedData(t *testing.T) {
+	r := Headers.ByName("Headers")[0]
+	description := r.Describe(lipgloss.NewStyle().Width(100))
+
+	assert.Contains(t, description, "HTTP")
+	assert.Contains(t, description, "apply")
+}
+
 func TestReferences_Titles(t *testing.T) {
 	n := Statuses.Titles()
 	assert.Equal(t, 5, len(n))
