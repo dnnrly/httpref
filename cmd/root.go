@@ -115,11 +115,7 @@ func root(cmd *cobra.Command, args []string) {
 }
 
 func printResults(results httpref.References) {
-	// doing the population in a point where the width should not change anymore
-	if !isStylePopulated {
-		isStylePopulated = true
-		baseRootStyle = lipgloss.NewStyle().Width(width)
-	}
+	baseRootStyle = lipgloss.NewStyle().Width(width)
 	httpref.PrintResultsWithStyle(results, baseRootStyle)
 }
 

@@ -9,36 +9,41 @@ import (
 )
 
 var (
-	resultStyle, nameStyle, summaryStyle lipgloss.Style
-	descriptionStyle                     *glamour.TermRenderer
-	areStylesPopulated                   bool
+	nameStyle, summaryStyle lipgloss.Style
+	descriptionStyle        *glamour.TermRenderer
+	areStylesPopulated      bool
 )
 
 type RenderStyle int64
 
 // Summarize creates a block of text that summarizes this reference
-func (r Reference) Summarize() string {
-	name := nameStyle.Render(r.Name)
-	summary := summaryStyle.Render(r.Summary)
+func (r Reference) Summarize(style lipgloss.Style) string {
+	name := nameStyle.Inherit(style).Render(r.Name)
+	summary := summaryStyle.Inherit(style).Render(r.Summary)
 	return lipgloss.JoinVertical(lipgloss.Bottom, name, summary)
 }
 
 // Describe creates a full, formated description of a reference
-func (r Reference) Describe() string {
-	name := nameStyle.Render(r.Name)
-	summary := summaryStyle.PaddingLeft(2).Render(r.Summary)
-	description, err := descriptionStyle.Render(r.Description)
+func (r Reference) Describe(style lipgloss.Style) string {
+	name := nameStyle.Inherit(style).Render(r.Name)
+	summary := summaryStyle.Inherit(style).PaddingLeft(2).Render(r.Summary)
+	descriptionStyle, err := updateTermRendered(style)
 	if err != nil {
 		// hoping this doesn't happen as most commands here suceed without issue
 		panic(err)
 	}
+	description, err := descriptionStyle.Render(r.Description)
 
 	return lipgloss.JoinVertical(lipgloss.Bottom, name, summary, description)
 }
 
-func renderStyles(baseStyle lipgloss.Style) {
-	resultStyle = baseStyle.Copy()
-	nameStyle = baseStyle.Copy().
+func init() {
+	renderStyles()
+}
+
+func renderStyles() {
+	resultStyle := lipgloss.NewStyle()
+	nameStyle = resultStyle.Copy().
 		Foreground(lipgloss.Color("86")).
 		Bold(true).
 		Underline(true)
@@ -47,13 +52,8 @@ func renderStyles(baseStyle lipgloss.Style) {
 	glamour.DarkStyleConfig.Document.Margin = &margin
 	glamour.LightStyleConfig.Document.Margin = &margin
 
-	summaryStyle = baseStyle.Copy()
-	r, err := glamour.NewTermRenderer(
-		// detect background color and pick either the default dark or light theme
-		glamour.WithAutoStyle(),
-		// wrap output at specific width (default is 80)
-		glamour.WithWordWrap(baseStyle.GetWidth()),
-	)
+	summaryStyle = resultStyle.Copy()
+	r, err := updateTermRendered(resultStyle)
 	if err != nil {
 		// hoping this doesn't happen as most commands here suceed without issue
 		panic(err)
@@ -61,12 +61,21 @@ func renderStyles(baseStyle lipgloss.Style) {
 	descriptionStyle = r
 }
 
-func PrintResultsWithStyle(results References, rootStyle lipgloss.Style) {
-	// doing the population in a point where the width should not change anymore
-	if !areStylesPopulated {
-		areStylesPopulated = true
-		renderStyles(rootStyle)
+func updateTermRendered(style lipgloss.Style) (*glamour.TermRenderer, error) {
+	width := style.GetWidth()
+	if width == 0 {
+		width = 80
 	}
+	r, err := glamour.NewTermRenderer(
+		// detect background color and pick either the default dark or light theme
+		glamour.WithAutoStyle(),
+		// wrap output at specific width (default is 80)
+		glamour.WithWordWrap(width),
+	)
+	return r, err
+}
+
+func PrintResultsWithStyle(results References, rootStyle lipgloss.Style) {
 	//render := getRendererByStyle(style)
 	switch len(results) {
 	case 0:
@@ -74,10 +83,10 @@ func PrintResultsWithStyle(results References, rootStyle lipgloss.Style) {
 		fmt.Fprintf(os.Stderr, res)
 		os.Exit(1)
 	case 1:
-		fmt.Printf("%s\n", results[0].Describe())
+		fmt.Printf("%s\n", results[0].Describe(rootStyle))
 	default:
 		for _, r := range results {
-			fmt.Printf("%s\n", r.Summarize())
+			fmt.Printf("%s\n", r.Summarize(rootStyle))
 		}
 	}
 }

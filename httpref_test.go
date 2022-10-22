@@ -5,6 +5,7 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/charmbracelet/lipgloss"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -68,7 +69,7 @@ func TestReference_SummarizeContainsCorrectParts(t *testing.T) {
 		Description: "description",
 	}
 
-	s := r.Summarize()
+	s := r.Summarize(lipgloss.NewStyle().Width(100))
 	assert.Contains(t, s, "name")
 	assert.Contains(t, s, "summary")
 }
@@ -81,7 +82,7 @@ func TestReference_SummarizeLimitsLineLength(t *testing.T) {
 		Description: "title description",
 	}
 
-	s := r.Summarize()
+	s := r.Summarize(lipgloss.NewStyle().Width(100))
 	for i, line := range strings.Split(s, "\n") {
 		assert.True(t, len(line) < 100, "line %d is length %d - '%s'", i, len(line), line)
 	}
@@ -89,7 +90,7 @@ func TestReference_SummarizeLimitsLineLength(t *testing.T) {
 
 func TestReference_DescribeLimitsLength(t *testing.T) {
 	r := Headers.ByName("Headers")[0]
-	description := r.Describe()
+	description := r.Describe(lipgloss.NewStyle().Width(100))
 
 	assert.Contains(t, description, "HTTP")
 	assert.Contains(t, description, "apply")
