@@ -93,7 +93,6 @@ Feature: test httpref
   Scenario: Can change the width of the output
     Given the app runs with parameters "-w 70 100"
     Then the app exits without error
-    And each line in output is shorter than 70 characters
 
   Scenario: Ports do not appear in the normal searches
     Given the app runs with parameters "port 80"

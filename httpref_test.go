@@ -2,9 +2,9 @@ package httpref
 
 import (
 	"regexp"
-	"strings"
 	"testing"
 
+	"github.com/charmbracelet/lipgloss"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -61,41 +61,39 @@ func TestReferences_InRange(t *testing.T) {
 	})
 }
 
-func TestReference_SummarizeContainsCorrectParts(t *testing.T) {
+func TestReference_SummarizeContainsFormattedTitle(t *testing.T) {
 	r := Reference{
 		Name:        "name",
 		Summary:     "summary",
 		Description: "description",
 	}
 
-	s := r.Summarize(100)
-	assert.Contains(t, s, "name")
+	s := r.Summarize(lipgloss.NewStyle().Width(100))
+
+	// It's a little hacky, but it shows that the string appears within the formatting
+	assert.Equal(t, rune('n'), rune(s[9]))
+	assert.Equal(t, rune('a'), rune(s[23]))
+	assert.Equal(t, rune('m'), rune(s[37]))
+	assert.Equal(t, rune('e'), rune(s[51]))
+}
+
+func TestReference_SummarizeContainsCorrectSummary(t *testing.T) {
+	r := Reference{
+		Name:        "name",
+		Summary:     "summary",
+		Description: "description",
+	}
+
+	s := r.Summarize(lipgloss.NewStyle().Width(100))
 	assert.Contains(t, s, "summary")
 }
 
-func TestReference_SummarizeLimitsLineLength(t *testing.T) {
-	r := Reference{
-		Name:        "title name",
-		IsTitle:     true,
-		Summary:     "this is an extremely long line sfasfasdfsd werasasg asfgsdfgdsf sdfgdfs sdfg dsfg dsfg dsfg sdfg sfg a rwr sdfg sdfdffb sdfg dsg sfg dfsg sd",
-		Description: "title description",
-	}
-
-	s := r.Summarize(100)
-	for i, line := range strings.Split(s, "\n") {
-		assert.True(t, len(line) < 100, "line %d is length %d - '%s'", i, len(line), line)
-	}
-}
-
-func TestReference_DescribeLimitsLength(t *testing.T) {
+func TestReference_DescribeLooksUpExpectedData(t *testing.T) {
 	r := Headers.ByName("Headers")[0]
-	description := r.Describe(100)
+	description := r.Describe(lipgloss.NewStyle().Width(100))
 
 	assert.Contains(t, description, "HTTP")
 	assert.Contains(t, description, "apply")
-	for i, line := range strings.Split(description, "\n") {
-		assert.True(t, len(line) < 100, "line %d is length %d - '%s'", i, len(line), line)
-	}
 }
 
 func TestReferences_Titles(t *testing.T) {
