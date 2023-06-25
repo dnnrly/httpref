@@ -43,16 +43,24 @@ func init() {
 
 func renderStyles() {
 	resultStyle := lipgloss.NewStyle()
+	descriptionForeColorDarkTheme := "120"
+	descriptionForeColorLightTheme := "202"
+	// styled using adaptive color to set one of the two colors based on the current theme
 	nameStyle = resultStyle.Copy().
-		Foreground(lipgloss.Color("86")).
+		Foreground(lipgloss.AdaptiveColor{Light: "202", Dark: "86"}).
 		Bold(true).
 		Underline(true)
 
 	margin := uint(1)
 	glamour.DarkStyleConfig.Document.Margin = &margin
 	glamour.LightStyleConfig.Document.Margin = &margin
+	glamour.DarkStyleConfig.Text.Color = &descriptionForeColorDarkTheme
+	glamour.LightStyleConfig.Text.Color = &descriptionForeColorLightTheme
 
-	summaryStyle = resultStyle.Copy()
+	// styled using adaptive color to set one of the two colors based on the current theme
+	summaryStyle = resultStyle.Copy().
+		Foreground(lipgloss.AdaptiveColor{Light: "20", Dark: "178"})
+
 	r, err := updateTermRendered(resultStyle)
 	if err != nil {
 		// hoping this doesn't happen as most commands here suceed without issue
