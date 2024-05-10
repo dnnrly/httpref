@@ -5868,6 +5868,58 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
+		Name: "6024-6025",
+		Description: `
+"Tigermeeting Android Client Discovery" (https://tigermeeting.app/) Online meeting service
+
+IANA Status - Unofficial
+TCP         - Unpspecified
+UDP         - Unofficial
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "6024-6025",
+		Description: `
+"Tigermeeting Android Client Discovery" (https://tigermeeting.app/) Online meeting service
+
+IANA Status - Unofficial
+TCP         - Unpspecified
+UDP         - Unofficial
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "6026",
+		Description: `
+"Tigermeeting client/server communication" (https://tigermeeting.app/) Online meeting service
+
+IANA Status - Unofficial
+TCP         - Unofficial
+UDP         - Unspecified
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "6030-6031",
+		Description: `
+"Tigermeeting Admin user discovery" (https://tigermeeting.app/) Online meeting service
+
+IANA Status - Unofficial
+TCP         - Unspecified
+UDP         - Unofficial
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
 		Name: "6050",
 		Description: `
 "Arcserve (https://en.wikipedia.org/wiki/Arcserve) backup"
@@ -6048,6 +6100,32 @@ https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`
 		Name: "6201",
 		Description: `
 Oracle WebCenter Content Portable: Admin
+
+IANA Status - Unofficial
+TCP         - Yes
+UDP         - Unspecified
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "6200",
+		Description: `
+Oracle WebCenter Content Portable: Content Server (With Native UI) and Inbound Refinery (https://en.wikipedia.org/wiki/Oracle_WebCenter)
+
+IANA Status - Unofficial
+TCP         - Unofficial
+UDP         - Unspecified
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "6201",
+		Description: `
+Oracle Webcenter Content Portable: Admin (https://en.wikipedia.org/wiki/Oracle_WebCenter)
 
 IANA Status - Unofficial
 TCP         - Yes
@@ -6279,6 +6357,19 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
+		Name: "6443",
+		Description: `
+Kubernetes API server (https://en.wikipedia.org/wiki/Kubernetes)
+
+IANA Status - Official
+TCP         - Yes
+UDP         - Unspecified
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
 		Name: "6444",
 		Description: `
 "Sun Grid Engine (https://en.wikipedia.org/wiki/Sun_Grid_Engine) Qmaster Service"
@@ -6298,6 +6389,19 @@ Sun Grid Engine Execution Service
 
 IANA Status - Official
 TCP         - Yes
+UDP         - Yes
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "6454",
+		Description: `
+Art-Net Protocol (https://en.wikipedia.org/wiki/Art-Net) Remote Device Management
+
+IANA Status - Official
+TCP         - No
 UDP         - Yes
 
 
@@ -6775,6 +6879,45 @@ UDP         - Yes
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
+		Name: "6924",
+		Description: `
+split-ping, ping with RX/TX latency/loss split
+
+IANA Status - Official
+TCP         - Yes
+UDP         - Yes
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "6935",
+		Description: `
+EthoScan Service
+
+IANA Status - Official
+TCP         - Yes
+UDP         - Yes
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "6936",
+		Description: `
+XenSource Management Service (XenSource Ltd) for transferring VMs
+
+IANA Status - Official
+TCP         - Yes
+UDP         - Yes
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
 		Name: "6969",
 		Description: `
 acmsoda
@@ -6966,6 +7109,19 @@ https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`
 IANA Status - Unofficial
 TCP         - Yes
 UDP         - Yes/No
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "7077",
+		Description: `
+Development-Network Authentication Protocol (DNAP)
+
+IANA Status - Official
+TCP         - Yes
+UDP         - Yes
 
 
 
@@ -7680,6 +7836,19 @@ UDP         - ?
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
+		Name: "8061",
+		Description: `
+"Nikatron Device Protocol" ( https://www.https://www.speedguide.net/port.php?port=8061 ) – Used by Microsoft Lync service, Kaperssky Security center
+
+IANA Status - Official
+TCP         - Yes
+UDP         - No
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
 		Name: "8069",
 		Description: `
 "OpenERP (https://en.wikipedia.org/wiki/OpenERP) 5.0 XML-RPC protocol"
@@ -8158,6 +8327,45 @@ UDP         - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
 	},
 	{
+		Name: "8400",
+		Description: `
+        "Commvault Communications Service (GxCVD, found in all client computers) ( https://en.wikipedia.org/wiki/Commvault ). Used for Unified Data Management. Used by Commvault backup recovery service."
+
+IANA STATUS - Official
+TCP         - Yes
+UDP         - Unspecified
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "8401",
+		Description: `
+        "Commvault Server Event Manager (GxCVD, found in all client computers) ( https://en.wikipedia.org/wiki/Commvault ). Used for Unified Data Management. Used by Commvault backup recovery service."
+
+IANA STATUS - Official
+TCP         - Yes
+UDP         - Unspecified
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "8403",
+		Description: `
+        "Commvault Firewall (GxFWD, tunnel port for HTTP/HTTPS) ( https://en.wikipedia.org/wiki/Commvault ). Used for Unified Data Management. Used by Commvault backup recovery service."
+
+IANA STATUS - Official
+TCP         - Yes
+UDP         - Unspecified
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
 		Name: "8443",
 		Description: `
 "SW Soft Plesk (https://en.wikipedia.org/wiki/SW_Soft_Plesk) Control Panel"
@@ -8284,6 +8492,19 @@ https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`
 IANA Status - Unofficial
 TCP         - ?
 UDP         - ?
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "8611-8614",
+		Description: `
+"Cannon Bubble Jet Network Protocol"
+
+IANA Status - Official 
+TCP         - Yes
+UDP         - Yes
 
 
 
@@ -12120,6 +12341,19 @@ https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`
 
 IANA Status - Official
 TCP         - Yes
+UDP         - Yes
+
+
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports`,
+	},
+	{
+		Name: "41230",
+		Description: `
+"Z-Wave Protocol over DTLS (https://en.wikipedia.org/wiki/Z-Wave). Z-Wave is a wireless communications protocol used primarily for residential and commercial building automation"
+
+IANA Status - Official
+TCP         - Assigned
 UDP         - Yes
 
 
