@@ -138,8 +138,3 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
 * `update` - update Go dependencies
 * `clean` - clean project dependencies
 * `clean-deps` - remove all of the build dependencies too
-
-
-## Minor Updates
-MINOR
-* Added many missing ports in the hashmap storing port information
