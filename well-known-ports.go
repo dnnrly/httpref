@@ -3,7 +3,7 @@ package httpref
 // WellKnownPorts is the list of all known IANA reserved ports
 var WellKnownPorts = References{
 	{
-		Name:    "Well Known Ports",
+		Name:    #Well Known Ports",
 		IsTitle: true,
 		Summary: "The port numbers in the range from 0 to 1023 (0 to 2^10 − 1)",
 		Description: `The port numbers in the range from 0 to 1023 (0 to 210 − 1) are the well-known ports or system ports.[2] They are used by system processes that provide widely used types of network services. On Unix-like operating systems, a process must execute with superuser privileges to be able to bind a network socket to an IP address using one of the well-known ports.
@@ -36,6 +36,30 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 SCTP        - Unspecified
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "2",
+		Description: `compressnet (Management Utility)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "3",
+		Description: `compressnet (Compression Process) 
+
+IANA Status - Official
+TCP - Assigned
+UDP - Assigned 
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
@@ -202,6 +226,66 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
+		Name: "27",
+		Description: `nsw-fe (NSW User System FE)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "28",
+		Description: `Palo Alto Networks Panorama High Availability (HA) sync encrypted port.
+
+IANA Status - Unofficial
+TCP -  Unofficial
+UDP - N/A
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "29",
+		Description: `msg-icp (MSG ICP)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "31",
+		Description: `msg-auth (MSG Authentication)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - N/A
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "33",
+		Description: `dsp (Display Support Protocol)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
 		Name: "37",
 		Description: `Time Protocol ( https://en.wikipedia.org/wiki/Time_Protocol )
 
@@ -209,6 +293,42 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 SCTP        - Unspecified
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "38",
+		Description: `rap (Route Access Protocol)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "39",
+		Description: `rlp (Resource Location Protocol)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "41",
+		Description: `graphics (Graphics)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
@@ -235,6 +355,42 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
+		Name: "44",
+		Description: `mpm-flags (MPM FLAGS Protocol)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "45",
+		Description: `mpm (Message Processing Module [recv])
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "46",
+		Description: `mpm-snd (MPM [default send])
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
 		Name: "47",
 		Description: `Unspecified
 
@@ -246,6 +402,18 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
+		Name: "48",
+		Description: `auditd (Digital Audit Daemon)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
 		Name: "49",
 		Description: `TACACS ( https://en.wikipedia.org/wiki/TACACS ) Login Host protocol. TACACS+ ( https://en.wikipedia.org/wiki/TACACS%2B ), still in draft which is an improved but distinct version of TACACS, only uses TCP 49.
 
@@ -253,6 +421,18 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 SCTP        - Unspecified
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "50",
+		Description: `re-mail-ck (Remote Mail Checking Protocol)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
@@ -301,6 +481,18 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
+		Name: "55",
+		Description: `isi-gl (ISI Graphics Language)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
 		Name: "56",
 		Description: `Xerox Network Systems (XNS) Authentication Protocol. Despite this port being assigned by IANA, the service is meant to work on SPP ( https://en.wikipedia.org/wiki/Sequenced_Packet_Protocol ) (ancestor of IPX/SPX ( https://en.wikipedia.org/wiki/IPX/SPX )), instead of TCP/IP.
 
@@ -330,6 +522,66 @@ IANA Status - Official
 TCP         - Reserved
 UDP         - Reserved
 SCTP        - Unspecified
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "62",
+		Description: `acas (ACA Services)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "63",
+		Description: `whoispp (whois++)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "64",
+		Description: `covia (Communications Integrator (CI))
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "65",
+		Description: `tacacs-ds (TACACS-Database Service)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "66",
+		Description: `sql-net (Oracle SQL*NET)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
@@ -385,6 +637,30 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 SCTP        - Unspecified
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "76",
+		Description: `deos (Distributed External Object Store)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "78",
+		Description: `vettcp (vettcp)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
@@ -452,6 +728,42 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
+		Name: "84",
+		Description: `ctf (Common Trace Facility)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "85",
+		Description: `mit-ml-dev (MIT ML Device)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "86",
+		Description: `mfcobol (Micro Focus Cobol)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
 		Name: "88",
 		Description: `Kerberos ( https://en.wikipedia.org/wiki/Kerberos_(protocol) ) authentication system
 
@@ -459,6 +771,18 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 SCTP        - Unspecified
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "89",
+		Description: `su-mit-tg (SU/MIT Telnet Gateway)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
@@ -474,6 +798,54 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
+		Name: "91",
+		Description: `mit-dov (MIT Dover Spooler)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "92",
+		Description: `npp (Network Printing Protocol)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "93",
+		Description: `dcp (Device Control Protocol)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "94",
+		Description: `objcall (Tivoli Object Dispatcher)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
 		Name: "95",
 		Description: `SUPDUP, terminal-independent remote login 
 
@@ -481,6 +853,54 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 SCTP        - Unspecified
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "96",
+		Description: `dixie (DIXIE Protocol Specification)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "97",
+		Description: `swift-rvf (Swift Remote Virtual File Protocol)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "98",
+		Description: `tacnews (TAC News)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "99",
+		Description: `metagram (Metagram Relay)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
@@ -525,6 +945,18 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 SCTP        - Unspecified
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "106",
+		Description: `macOS Server, (macOS) password server (https://en.wikipedia.org/wiki/MacOS_Server)
+
+IANA Status - Official
+TCP -  Unofficial
+UDP - No
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
@@ -732,6 +1164,18 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
+		Name: "151",
+		Description: `HEMS Energy Management System (https://en.wikipedia.org/wiki/Emergency_management_system)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
 		Name: "152",
 		Description: `Background File Transfer Program ( https://en.wikipedia.org/w/index.php?title=Background_File_Transfer_Program&action=edit&redlink=1 ) (BFTP)
 
@@ -798,6 +1242,30 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
+		Name: "165",
+		Description: `Xerox (https://en.wikipedia.org/wiki/Xerox)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "169",
+		Description: `SEND (https://en.wikipedia.org/wiki/Secure_Neighbor_Discovery)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
 		Name: "170",
 		Description: `Network PostScript ( https://en.wikipedia.org/wiki/PostScript ) print server ( https://en.wikipedia.org/wiki/Print_server )
 
@@ -827,6 +1295,18 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Assigned
 SCTP        - Yes
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "180",
+		Description: `ris (https://en.wikipedia.org/wiki/Remote_Installation_Services)
+
+IANA Status - Official
+TCP -  Assigned
+UDP - Assigned
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
@@ -1018,6 +1498,18 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
+		Name: "312",
+		Description: `macOS Xsan administration (https://en.wikipedia.org/wiki/Xsan)
+
+IANA Status - Unofficial
+TCP -  Unofficial
+UDP - No
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
 		Name: "318",
 		Description: `PKIX Time Stamp Protocol ( https://en.wikipedia.org/wiki/Time_Stamp_Protocol ) (TSP)
 
@@ -1047,6 +1539,18 @@ IANA Status - Official
 TCP         - Unspecified
 UDP         - Yes
 SCTP        - Unspecified
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "323",
+		Description: `Resource Public Key Infrastructure (https://en.wikipedia.org/wiki/Resource_Public_Key_Infrastructure)
+
+IANA Status - Official
+TCP -  Yes
+UDP - Yes
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
@@ -1132,6 +1636,18 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 SCTP        - Unspecified
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "376",
+		Description: `Amiga Envoy Network Inquiry Protocol (https://en.wikipedia.org/wiki/Amiga)
+
+IANA Status - Official
+TCP -  Yes
+UDP - Yes
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
@@ -1332,6 +1848,18 @@ IANA Status - Official
 TCP         - Yes
 UDP         - Yes
 SCTP        - Unspecified
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "476–490",
+		Description: `Centro Software ERP ports
+
+IANA Status - Unofficial
+TCP -  Unofficial
+UDP - Unofficial
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
@@ -2022,6 +2550,18 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
+		Name: "684",
+		Description: `CORBA IIOP SSL
+
+IANA Status - Official
+TCP -  Yes
+UDP - Yes
+SCTP - N/A
+DCCP - N/A
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
 		Name: "688",
 		Description: `REALM-RUSD (ApplianceWare Server Appliance Management Protocol)
 
@@ -2526,6 +3066,18 @@ IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
 SCTP        - Unspecified
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
+	},
+	{
+		Name: "988",
+		Description: `Lustre (file system) Protocol (data). https://en.wikipedia.org/wiki/Lustre_(file_system)
+
+IANA Status - Unofficial
+TCP -  Unofficial
+UDP - Unofficial
+SCTP - N/A
+DCCP - N/A
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
