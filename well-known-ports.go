@@ -630,8 +630,8 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
-		Name: "71-74",
-		Description: `NETRJS ( https://en.wikipedia.org/wiki/NETRJS ) protocol
+		Name: "71",
+		Description: `NETRJS ( https://en.wikipedia.org/wiki/NETRJS ) protocol Ranges through 74
 
 IANA Status - Official
 TCP         - Yes
@@ -1399,28 +1399,6 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
-		Name: "225-241",
-		Description: `Unspecified
-
-IANA Status - Official
-TCP         - Reserved
-UDP         - Reserved
-SCTP        - Unspecified
-
-https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
-	},
-	{
-		Name: "249-255",
-		Description: `Unspecified
-
-IANA Status - Official
-TCP         - Reserved
-UDP         - Reserved
-SCTP        - Unspecified
-
-https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
-	},
-	{
 		Name: "259",
 		Description: `Efficient Short Remote Operations (ESRO)
 
@@ -1852,8 +1830,8 @@ SCTP        - Unspecified
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
 	},
 	{
-		Name: "476–490",
-		Description: `Centro Software ERP ports
+		Name: "476",
+		Description: `Centro Software ERP ports. Range 476-490
 
 IANA Status - Unofficial
 TCP -  Unofficial
@@ -3184,17 +3162,6 @@ https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`
 IANA Status - Unofficial
 TCP         - Yes
 UDP         - Unspecified
-SCTP        - Unspecified
-
-https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
-	},
-	{
-		Name: "1011-1020",
-		Description: `Unspecified
-
-IANA Status - Official
-TCP         - Reserved
-UDP         - Reserved
 SCTP        - Unspecified
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports`,
