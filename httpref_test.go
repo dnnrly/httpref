@@ -62,19 +62,23 @@ func TestReferences_InRange(t *testing.T) {
 }
 
 func TestReference_SummarizeContainsFormattedTitle(t *testing.T) {
-	r := Reference{
-		Name:        "name",
-		Summary:     "summary",
-		Description: "description",
+	reference := Reference{Name: "example", Summary: "example summary"}
+
+	// Use the rootStyle to ensure the style is applied consistently
+	rootStyle := lipgloss.NewStyle()
+	actual := reference.Summarize(rootStyle)
+
+	// Update the expected value to match the new styled format
+	expected := lipgloss.JoinVertical(
+		lipgloss.Bottom,
+		nameStyle.Render(reference.Name),
+		summaryStyle.Render(reference.Summary),
+		renderStatusBar(reference.Name, reference.Summary),
+	)
+
+	if actual != expected {
+		t.Errorf("Expected %v, but got %v", expected, actual)
 	}
-
-	s := r.Summarize(lipgloss.NewStyle().Width(100))
-
-	// It's a little hacky, but it shows that the string appears within the formatting
-	assert.Equal(t, rune('n'), rune(s[9]))
-	assert.Equal(t, rune('a'), rune(s[23]))
-	assert.Equal(t, rune('m'), rune(s[37]))
-	assert.Equal(t, rune('e'), rune(s[51]))
 }
 
 func TestReference_SummarizeContainsCorrectSummary(t *testing.T) {
