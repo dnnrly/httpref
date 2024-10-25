@@ -11,7 +11,7 @@ import (
 var (
 	nameStyle, summaryStyle lipgloss.Style
 	descriptionStyle        *glamour.TermRenderer
-	areStylesPopulated      bool
+	descriptionBorderStyle  lipgloss.Style
 )
 
 type RenderStyle int64
@@ -20,21 +20,25 @@ type RenderStyle int64
 func (r Reference) Summarize(style lipgloss.Style) string {
 	name := nameStyle.Inherit(style).Render(r.Name)
 	summary := summaryStyle.Inherit(style).Render(r.Summary)
-	return lipgloss.JoinVertical(lipgloss.Bottom, name, summary)
+	statusBar := renderStatusBar(r.Name, r.Summary)
+	return lipgloss.JoinVertical(lipgloss.Bottom, name, summary, statusBar)
 }
 
 // Describe creates a full, formated description of a reference
 func (r Reference) Describe(style lipgloss.Style) string {
-	name := nameStyle.Inherit(style).Render(r.Name)
-	summary := summaryStyle.Inherit(style).PaddingLeft(2).Render(r.Summary)
+	statusBar := renderStatusBar(r.Name, r.Summary)
 	descriptionStyle, err := updateTermRendered(style)
 	if err != nil {
 		// hoping this doesn't happen as most commands here suceed without issue
 		panic(err)
 	}
 	description, err := descriptionStyle.Render(r.Description)
+	if err != nil {
+		panic(err)
+	}
+	descriptionWithBorder := descriptionBorderStyle.Render(description)
 
-	return lipgloss.JoinVertical(lipgloss.Bottom, name, summary, description)
+	return lipgloss.JoinVertical(lipgloss.Bottom, statusBar, descriptionWithBorder)
 }
 
 func init() {
@@ -45,21 +49,20 @@ func renderStyles() {
 	resultStyle := lipgloss.NewStyle()
 	descriptionForeColorDarkTheme := "120"
 	descriptionForeColorLightTheme := "202"
-	// styled using adaptive color to set one of the two colors based on the current theme
-	nameStyle = resultStyle.Copy().
-		Foreground(lipgloss.AdaptiveColor{Light: "202", Dark: "86"}).
-		Bold(true).
-		Underline(true)
+
+	descriptionBorderStyle = lipgloss.NewStyle().
+		BorderStyle(lipgloss.NormalBorder()).
+		BorderForeground(lipgloss.AdaptiveColor{Light: "#04B575", Dark: "5"}).
+		Padding(0, 1, 0, 1)
 
 	margin := uint(1)
 	glamour.DarkStyleConfig.Document.Margin = &margin
 	glamour.LightStyleConfig.Document.Margin = &margin
 	glamour.DarkStyleConfig.Text.Color = &descriptionForeColorDarkTheme
 	glamour.LightStyleConfig.Text.Color = &descriptionForeColorLightTheme
-
-	// styled using adaptive color to set one of the two colors based on the current theme
-	summaryStyle = resultStyle.Copy().
-		Foreground(lipgloss.AdaptiveColor{Light: "20", Dark: "178"})
+	// if background color intended
+	// backgroundColor := "#353533"
+	// glamour.DarkStyleConfig.Document.BackgroundColor = &backgroundColor
 
 	r, err := updateTermRendered(resultStyle)
 	if err != nil {
@@ -84,7 +87,6 @@ func updateTermRendered(style lipgloss.Style) (*glamour.TermRenderer, error) {
 }
 
 func PrintResultsWithStyle(results References, rootStyle lipgloss.Style) {
-	//render := getRendererByStyle(style)
 	switch len(results) {
 	case 0:
 		res := "Filter not found any results\n"
@@ -97,4 +99,28 @@ func PrintResultsWithStyle(results References, rootStyle lipgloss.Style) {
 			fmt.Printf("%s\n", r.Summarize(rootStyle))
 		}
 	}
+}
+
+func renderStatusBar(name, summary string) string {
+	// styled using adaptive color to set one of the two colors based on the current theme
+	statusStyle := lipgloss.NewStyle().
+		Foreground(lipgloss.Color("#FF5F87")).
+		Background(lipgloss.Color("#353533")).
+		Bold(true).
+		Padding(0, 1)
+
+	statusText := lipgloss.NewStyle().
+		Foreground(lipgloss.AdaptiveColor{Light: "20", Dark: "178"}).
+		Background(lipgloss.AdaptiveColor{Light: "#D9DCCF", Dark: "#353533"}).
+		Padding(0, 2)
+
+	statusKey := statusStyle.Render(name)
+	statusVal := statusText.Render(summary)
+
+	bar := lipgloss.JoinHorizontal(lipgloss.Top,
+		statusKey,
+		statusVal,
+	)
+
+	return statusStyle.Width(101).Render(bar)
 }
