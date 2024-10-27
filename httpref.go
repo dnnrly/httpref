@@ -1,6 +1,7 @@
 package httpref
 
 import (
+	"fmt"
 	"strings"
 )
 
@@ -40,7 +41,13 @@ func (r References) InRange(code string) References {
 	for _, v := range r {
 		if strings.Contains(v.Name, "-") {
 			parts := strings.Split(v.Name, "-")
-			if code >= parts[0] && code <= parts[len(parts)-1] {
+			if len(parts) != 2 {
+				fmt.Printf("Invalid range format for reference name: %s\n", v.Name)
+				continue
+			}
+
+			start, end := parts[0], parts[1]
+			if code >= start && code <= end {
 				return References{v}
 			}
 		}
@@ -62,6 +69,7 @@ func (r References) Titles() References {
 	return results
 }
 
+// Search looks for references that contain the search term in their fields
 func (r References) Search(term string) References {
 	results := References{}
 
