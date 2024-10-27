@@ -76,9 +76,7 @@ func TestReference_SummarizeContainsFormattedTitle(t *testing.T) {
 		renderStatusBar(reference.Name, reference.Summary),
 	)
 
-	if actual != expected {
-		t.Errorf("Expected %v, but got %v", expected, actual)
-	}
+	assert.Equal(t, expected, actual)
 }
 
 func TestReference_SummarizeContainsCorrectSummary(t *testing.T) {

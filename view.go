@@ -60,9 +60,6 @@ func renderStyles() {
 	glamour.LightStyleConfig.Document.Margin = &margin
 	glamour.DarkStyleConfig.Text.Color = &descriptionForeColorDarkTheme
 	glamour.LightStyleConfig.Text.Color = &descriptionForeColorLightTheme
-	// if background color intended
-	// backgroundColor := "#353533"
-	// glamour.DarkStyleConfig.Document.BackgroundColor = &backgroundColor
 
 	r, err := updateTermRendered(resultStyle)
 	if err != nil {
