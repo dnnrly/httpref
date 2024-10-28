@@ -1,7 +1,6 @@
 package httpref
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -41,10 +40,6 @@ func (r References) InRange(code string) References {
 	for _, v := range r {
 		if strings.Contains(v.Name, "-") {
 			parts := strings.Split(v.Name, "-")
-			if len(parts) != 2 {
-				fmt.Printf("Invalid range format for reference name: %s\n", v.Name)
-				continue
-			}
 
 			start, end := parts[0], parts[1]
 			if code >= start && code <= end {

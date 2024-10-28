@@ -24,11 +24,11 @@ func (r Reference) Summarize(style lipgloss.Style) string {
 	return lipgloss.JoinVertical(lipgloss.Bottom, name, summary, statusBar)
 }
 
-// Describe creates a full, formated description of a reference
-func (r Reference) Describe(style lipgloss.Style) string {
+// Describe creates a full, formatted description of a reference
+func (r Reference) Describe(style lipgloss.Style) (string, error) {
 	defer func() {
 		if rec := recover(); rec != nil {
-			fmt.Fprintf(os.Stderr, "An error occurred: %v\n", rec)
+			fmt.Fprintf(os.Stderr, "An unexpected error occurred: %v\nPlease raise an issue on GitHub: https://github.com/Erfanm83/httpref/issues/new\n", rec)
 		}
 	}()
 
@@ -36,26 +36,30 @@ func (r Reference) Describe(style lipgloss.Style) string {
 	descriptionStyle, err := updateTermRendered(style)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Failed to update term renderer: %v\n", err)
-		return "Error rendering description"
+		return "", err
 	}
 	description, err := descriptionStyle.Render(r.Description)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Failed to render description: %v\n", err)
-		return "Error rendering description"
+		return "", err
 	}
 	descriptionWithBorder := descriptionBorderStyle.Render(description)
 
-	return lipgloss.JoinVertical(lipgloss.Bottom, statusBar, descriptionWithBorder)
+	return lipgloss.JoinVertical(lipgloss.Bottom, statusBar, descriptionWithBorder), nil
 }
 
 func init() {
-	renderStyles()
+	err := renderStyles()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Failed to initialize render styles: %v\nPlease raise an issue on GitHub: https://github.com/dnnrly/httpref/issues/new \n", err)
+		os.Exit(1)
+	}
 }
 
-func renderStyles() {
+func renderStyles() error {
 	defer func() {
 		if rec := recover(); rec != nil {
-			fmt.Fprintf(os.Stderr, "An error occurred during renderStyles: %v\n", rec)
+			fmt.Fprintf(os.Stderr, "An unexpected error occurred during renderStyles: %v\nPlease raise an issue on GitHub: https://github.com/dnnrly/httpref/issues/new \n", rec)
 		}
 	}()
 
@@ -77,9 +81,10 @@ func renderStyles() {
 	r, err := updateTermRendered(resultStyle)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Failed to update term renderer in renderStyles: %v\n", err)
-		return
+		return err
 	}
 	descriptionStyle = r
+	return nil
 }
 
 func updateTermRendered(style lipgloss.Style) (*glamour.TermRenderer, error) {
@@ -99,22 +104,29 @@ func updateTermRendered(style lipgloss.Style) (*glamour.TermRenderer, error) {
 func PrintResultsWithStyle(results References, rootStyle lipgloss.Style) {
 	defer func() {
 		if rec := recover(); rec != nil {
-			fmt.Fprintf(os.Stderr, "An error occurred during PrintResultsWithStyle: %v\n", rec)
+			fmt.Fprintf(os.Stderr, "An unexpected error occurred during PrintResultsWithStyle: %v\nPlease raise an issue on GitHub: https://github.com/Erfanm83/httpref/issues/new\n", rec)
 			os.Exit(1)
 		}
 	}()
 
-	switch len(results) {
-	case 0:
+	if len(results) == 0 {
 		res := "Filter not found any results\n"
 		fmt.Fprintf(os.Stderr, res)
 		os.Exit(1)
-	case 1:
-		fmt.Printf("%s\n", results[0].Describe(rootStyle))
-	default:
-		for _, r := range results {
-			fmt.Printf("%s\n", r.Summarize(rootStyle))
+	}
+
+	if len(results) == 1 {
+		description, err := results[0].Describe(rootStyle)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Failed to describe reference: %v\n", err)
+			os.Exit(1)
 		}
+		fmt.Printf("%s\n", description)
+		return
+	}
+
+	for _, r := range results {
+		fmt.Printf("%s\n", r.Summarize(rootStyle))
 	}
 }
 
